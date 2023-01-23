@@ -25,3 +25,8 @@ module YerbaMateReviews
     # config.eager_load_paths << Rails.root.join("extras")
   end
 end
+
+config.middleware.insert(0, Rack::ReverseProxy) do
+  reverse_proxy_options preserve_host: true
+  reverse_proxy /^\/blog(\/.*)$/, 'http://blog.bestyerbamate.co$1', :username => 'basic-auth-username', :password => 'basic-auth-password',:timeout => 500
+end
