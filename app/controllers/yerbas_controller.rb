@@ -1,0 +1,2 @@
+class YerbasController < ApplicationController
+end

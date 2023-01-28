@@ -1,0 +1,2 @@
+class Yerba < ApplicationRecord
+end
