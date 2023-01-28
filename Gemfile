@@ -79,4 +79,3 @@ end
 
 gem 'rack-reverse-proxy', :require => 'rack/reverse_proxy'
 gem 'google-tag-manager-rails'
-gem "pundit"
