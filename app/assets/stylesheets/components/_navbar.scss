@@ -1,4 +1,6 @@
 // Navbar
+@import "transition";
+
 .header-position {
     position: absolute;
     left: 0;
@@ -582,7 +584,7 @@
                 padding: 0px;
                 color: $gray-600;
                 text-align: center;
-               
+
                 .nav-icon {
                     background-color: transparent;
                     height: 50px;
@@ -607,7 +609,7 @@
                     background-color: $primary;
                 }
                 &.active{
-                    
+
                 }
             }
 
@@ -826,7 +828,7 @@
 
 @media (max-width: 992px) {
     .navbar {
-      
+
       .nav-top-wrap {
         flex-direction: row;
         .dropdown {
