@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    @@include("../../partials/head.html")
+    <title>Dashboard - Rentkit - Directory & Listings Bootstrap 5 Template.</title>
+
+</head>
+<!-- error  -->
+
+<body class="bg-gray-200">
+    <!-- Wrapper -->
+    <div id="db-wrapper">
+
+        @@include("../../partials/navbar-vertical-compact.html",{
+            "page": "accounts"
+        })
+        <div id="page-content-for-mini">
+            @@include("../../partials/dashboard-header.html")
+            <!-- Container fluid -->
+            <div class="container-fluid px-lg-10  p-4">
+                <div class="row">
+                    <div class=" col-xl-8 col-md-12 col-12">
+
+                        <div class="mb-4">
+                            <h1 class="mb-0 fw-bold h2">Accounts</h1>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="bg-gray-300 rounded-3 px-3 mb-4">
+                                <ul class="nav nav-lb-tab">
+                                    <li class="nav-item">
+                                      <a class="nav-link "  href="accounts-edit.html">Edit Profile</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a class="nav-link" href="accounts-security.html">Security</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a class="nav-link active" href="accounts-social-profile.html">Social profiles</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a class="nav-link " href="accounts-notification.html">Notifications</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link " href="accounts-profile-privacy.html">Profile privacy</a>
+                                      </li>
+                                      <li class="nav-item">
+                                        <a class="nav-link " href="accounts-delete.html">Delete</a>
+                                      </li>
+                                  </ul>
+                                </div>
+                                <div class="card border-0 shadow-sm">
+                                    <!-- Card header -->
+                                    <div class="card-header bg-white p-4">
+                                        <h3 class="mb-0">Social Profiles</h3>
+                                        <p class="mb-0">
+                                            Add your social profile links in below social accounts.
+                                        </p>
+                                    </div>
+                                    <!-- Card body -->
+                                    <div class="card-body p-4">
+                                        <div class="row mb-5">
+                                                <!-- Twitter -->
+                                            <div class="col-lg-2 col-md-4 col-12">
+                                                <h5>Twitter</h5>
+                                            </div>
+                                            <div class="col-lg-10 col-md-8 col-12">
+                                                <input type="text" class="form-control mb-1" placeholder="Twitter Profile Name">
+                                                <small class="text-muted">Add your Twitter username (e.g. johnsmith).</small>
+                                            </div>
+                                        </div>
+                                            <!-- Facebook -->
+                                        <div class="row mb-5">
+                                            <div class="col-lg-2 col-md-4 col-12">
+                                                <h5>Facebook</h5>
+                                            </div>
+                                            <div class="col-lg-10 col-md-8 col-12">
+                                                <input type="text" class="form-control mb-1" placeholder="Facebook Profile Name">
+                                                <small class="text-muted">Add your Facebook username (e.g. johnsmith).</small>
+                                            </div>
+                                        </div>
+                                            <!-- Instagram -->
+                                        <div class="row mb-5">
+                                            <div class="col-lg-2 col-md-4 col-12">
+                                                <h5>Instagram</h5>
+                                            </div>
+                                            <div class="col-lg-10 col-md-8 col-12">
+                                                <input type="text" class="form-control mb-1" placeholder="Instagram Profile Name">
+                                                <small class="text-muted">Add your Instagram username (e.g. johnsmith).</small>
+                                            </div>
+                                        </div>
+                                            <!-- Linked in -->
+                                        <div class="row mb-5">
+                                            <div class="col-lg-2 col-md-4 col-12">
+                                                <h5>LinkedIn Profile URL</h5>
+                                            </div>
+                                            <div class="col-lg-10 col-md-8 col-12">
+                                                <input type="text" class="form-control mb-1" placeholder="LinkedIn Profile URL ">
+                                                <small class="text-muted">Add your linkedin profile URL. (
+                                                    https://www.linkedin.com/in/jitu-chauhan-ba004b78)</small>
+                                            </div>
+                                        </div>
+                                            <!-- Youtube -->
+                                        <div class="row mb-3">
+                                            <div class="col-lg-2 col-md-4 col-12">
+                                                <h5>YouTube</h5>
+                                            </div>
+                                            <div class="col-lg-10 col-md-8 col-12">
+                                                <input type="text" class="form-control mb-1" placeholder="YouTube URL">
+                                                <small class="text-muted">Add your Youtube profile URL.
+                                                </small>
+                                            </div>
+                                        </div>
+                                            <!-- Button -->
+                                        <div class="row">
+                                            <div class="offset-lg-2 col-lg-6 col-12">
+                                                <a href="#" class="btn btn-primary">Save Social Profile</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+                </div>
+              
+            </div>
+
+
+        </div>
+    </div>
+
+
+    </div>
+    <!-- scripts  -->
+    @@include("../../partials/scripts.html")
+</body>
+
+</html>

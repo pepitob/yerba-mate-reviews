@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    @@include("../../partials/head.html")
+    <title>Dashboard - Rentkit - Directory & Listings Bootstrap 5 Template.</title>
+
+</head>
+<!-- error  -->
+
+<body class="bg-gray-200">
+    <!-- Wrapper -->
+    <div id="db-wrapper">
+
+        @@include("../../partials/navbar-vertical-compact.html",{
+            "page": "accounts"
+        })
+        <div id="page-content-for-mini">
+            @@include("../../partials/dashboard-header.html")
+            <!-- Container fluid -->
+            <div class="container-fluid px-lg-10  p-4">
+                <div class="row">
+                    <div class=" col-xl-8 col-md-12 col-12">
+
+                        <div class="mb-4">
+                            <h1 class="mb-0 fw-bold h2">Accounts</h1>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="bg-gray-300 rounded-3 px-3 mb-4">
+                                <ul class="nav nav-lb-tab">
+                                    <li class="nav-item">
+                                      <a class="nav-link "  href="accounts-edit.html">Edit Profile</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a class="nav-link" href="accounts-security.html">Security</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a class="nav-link " href="accounts-social-profile.html">Social profiles</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a class="nav-link " href="accounts-notification.html">Notifications</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="accounts-profile-privacy.html">Profile privacy</a>
+                                      </li>
+                                      <li class="nav-item">
+                                        <a class="nav-link " href="accounts-delete.html">Delete</a>
+                                      </li>
+                                  </ul>
+                                </div>
+                                <div class="card border-o shadow-sm">
+                                    <!-- Card header -->
+                                    <div class="card-header bg-white p-4">
+                                        <h3 class="mb-0">Profile Privacy Settings</h3>
+                                        <p class="mb-0">
+                                            Making your profile public allow other users to see what you
+                                            have been learning on Geeks.
+                                        </p>
+                                    </div>
+                                    <!-- Card body -->
+                                    <div class="card-body p-4">
+                                        <div class="row d-lg-flex justify-content-between">
+                                            <div class="col-lg-9 col-md-7 col-12 mb-3 mb-lg-0">
+                                                <h4 class="mb-0">Privacy levels</h4>
+                                                <p class="mb-0">Show your profile public and private.</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-5 col-12">
+                                           <select class="form-select">
+                                                    <option value="">Select</option>
+                                                    <option value="public">Public</option>
+                                                    <option value="private">Private</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <hr class="my-5">
+                                        <div>
+                                            <h4 class="mb-0">Profile settings</h4>
+                                            <p class="mb-5">
+                                                These controls give you the ability to customize what areas
+                                                of your profile others are able to see.
+                                            </p>
+                                            <!-- List group -->
+                                            <ul class="list-group list-group-flush">
+                                                <!-- List group item -->
+                                                <li class="list-group-item d-flex align-items-center justify-content-between px-0 py-2">
+                                                    <div>Show your profile on search engines</div>
+                                                    <div>
+                                                        <div class="form-check form-switch">
+                                                            <input type="checkbox" class="form-check-input" id="swicthOne" checked="">
+                                                            <label class="form-check-label" for="swicthOne"></label>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <!-- List group item -->
+                                                <li class="list-group-item d-flex align-items-center justify-content-between px-0 py-2">
+                                                    <div>Show courses you're taking on your profile page</div>
+                                                    <div>
+                                                        <div class="form-check form-switch">
+                                                            <input type="checkbox" class="form-check-input" id="switchTwo">
+                                                            <label class="form-check-label" for="switchTwo"></label>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <!-- List group item -->
+                                                <li class="list-group-item d-flex align-items-center justify-content-between px-0 py-2">
+                                                    <div>Show your profile on public</div>
+                                                    <div>
+                                                        <div class="form-check form-switch">
+                                                            <input type="checkbox" class="form-check-input" id="switchThree" checked="">
+                                                            <label class="form-check-label" for="switchThree"></label>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <!-- List group item -->
+                                                <li class="list-group-item d-flex align-items-center justify-content-between px-0 py-2">
+                                                    <div>Currently learning</div>
+                                                    <div>
+                                                        <div class="form-check form-switch">
+                                                            <input type="checkbox" class="form-check-input" id="switchFour" checked="">
+                                                            <label class="form-check-label" for="switchFour"></label>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <!-- List group item -->
+                                                <li class="list-group-item d-flex align-items-center justify-content-between px-0 py-2">
+                                                    <div>Completed courses</div>
+                                                    <div>
+                                                        <div class="form-check form-switch">
+                                                            <input type="checkbox" class="form-check-input" id="switchFive" checked="">
+                                                            <label class="form-check-label" for="switchFive"></label>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <!-- List group item -->
+                                                <li class="list-group-item d-flex align-items-center justify-content-between px-0 py-2">
+                                                    <div>Your Interests</div>
+                                                    <div>
+                                                        <div class="form-check form-switch">
+                                                            <input type="checkbox" class="form-check-input" id="switchSix" checked="">
+                                                            <label class="form-check-label" for="switchSix"></label>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+                </div>
+              
+            </div>
+
+
+        </div>
+    </div>
+
+
+    </div>
+    <!-- scripts  -->
+    @@include("../../partials/scripts.html")
+</body>
+
+</html>

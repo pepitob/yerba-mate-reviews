@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    @@include("../../partials/head.html")
+    <title>Dashboard - Rentkit - Directory & Listings Bootstrap 5 Template.</title>
+
+</head>
+<!-- error  -->
+
+<body class="bg-gray-200">
+    <!-- Wrapper -->
+    <div id="db-wrapper">
+
+        @@include("../../partials/navbar-vertical-compact.html",{
+            "page": "overview"
+        })
+        <div id="page-content-for-mini">
+            @@include("../../partials/dashboard-header.html")
+            <!-- Container fluid -->
+            <div class="container-fluid px-lg-10  p-4">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-12">
+                        <div class="mb-4 d-md-flex justify-content-between align-items-center">
+                            <div class="mb-3 mb-md-0">
+                                <h1 class="mb-0 h2 fw-bold">Hello Brian,</h1>
+                                <p class="mb-0">Here’s your activity today, take a momment to have look at this</p>
+                            </div>
+                            <div class="d-flex">
+                                <a href="#" class="btn btn-primary">Manage Bookings</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-12 col-12">
+                        <!-- Card -->
+                        <div class="card mb-4 border-0 shadow-sm">
+                            <!-- Card body -->
+                            <div class="card-body p-4">
+
+                                <div>
+                                    <h5 class="mb-0">Views today</h5>
+                                </div>
+
+                                <div class="d-flex align-items-center justify-content-between mt-4">
+                                    <h2 class="fw-bold mb-0 fs-1">
+                                        1,200
+                                    </h2>
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
+                                        stroke-linejoin="round" class="feather feather-activity text-primary">
+                                        <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                                    </svg>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-12">
+                        <!-- Card -->
+                        <div class="card mb-4 border-0 shadow-sm">
+                            <!-- Card body -->
+                            <div class="card-body p-4">
+
+                                <div>
+                                    <h5 class="mb-0">Today earnings</h5>
+                                </div>
+
+                                <div class="d-flex align-items-center justify-content-between mt-4">
+                                    <h2 class="fw-bold mb-0 fs-1">
+                                        $3120.00
+                                    </h2>
+
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
+                                        stroke-linejoin="round" class="feather feather-dollar-sign text-primary">
+                                        <line x1="12" y1="1" x2="12" y2="23"></line>
+                                        <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                                    </svg>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-12">
+                        <div class="card mb-4 border-0 shadow-sm">
+                            <!-- Card body -->
+                            <div class="card-body p-4">
+
+                                <div>
+                                    <h5 class="mb-0">Your balance</h5>
+                                </div>
+
+                                <div class="d-flex align-items-center justify-content-between mt-4">
+                                    <h2 class="fw-bold mb-0 fs-1">
+                                        $1,195.00
+                                    </h2>
+
+
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
+                                        stroke-linejoin="round" class="feather feather-credit-card text-primary">
+                                        <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
+                                        <line x1="1" y1="10" x2="23" y2="10"></line>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-12">
+                        <!-- Card -->
+                        <div class="card mb-4 border-0 shadow-sm">
+
+                            <!-- Card body -->
+                            <div class="card-body p-4">
+                                <h4 class="card-title">Listings</h4>
+                                <!-- Earning chart -->
+                                <div id="earning" class="apex-charts"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-xl-8 col-lg-7 col-12">
+                        <!-- Card -->
+                        <div class="card mb-4 border-0 shadow-sm">
+
+                            <!-- Card body -->
+                            <div class="card-body p-4">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                <h4 class="card-title mb-0">Upcoming Reservations</h4>
+                                <a href="#" class="btn btn-outline-light border text-muted ">View All</a>
+                            </div>
+                             <div>
+                                <ul class="list-group list-group-flush">
+                                  
+                                    <li class="list-group-item py-3 d-flex justify-content-between align-items-center px-0 pt-0">
+                                        <div class="d-flex align-items-center">
+                                            <a href="#"> <img src="../../assets/images/listing-img-1.jpg" alt="" class="img-fluid rounded img-4by3-lg"></a>
+                                            <div class="ms-3 lh-1">
+                                                <h5 class="mb-1"> <a href="#" class="text-inherit">Beautiful Cozy Home</a></h5>
+                                               <small class="text-muted">03 Oct to 06 Oct, 2023</small>
+                                            </div>
+                                        </div>
+                                        <div class="text-end lh-1">
+                                            <h5 class="mb-0">$320.00</h5>
+                                            <span class="badge bg-success">Paid</span>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item py-3 d-flex justify-content-between align-items-center px-0">
+                                        <div class="d-flex align-items-center">
+                                            <a href="#"> <img src="../../assets/images/listing-img-2.jpg" alt="" class="img-fluid rounded img-4by3-lg"></a>
+                                            <div class="ms-3 lh-1">
+                                                <h5 class="mb-1"> <a href="#" class="text-inherit">Affordable Long Term Room</a></h5>
+                                               <small class="text-muted">12 Sept to 14 Sept, 2023</small>
+                                            </div>
+                                        </div>
+                                        <div class="text-end lh-1">
+                                            <h5 class="mb-0">$570.00</h5>
+                                            <span class="badge bg-warning">Pending</span>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item py-3 d-flex justify-content-between align-items-center px-0">
+                                        <div class="d-flex align-items-center">
+                                            <a href="#"> <img src="../../assets/images/listing-img-3.jpg" alt="" class="img-fluid rounded img-4by3-lg"></a>
+                                            <div class="ms-3 lh-1">
+                                                <h5 class="mb-1"> <a href="#" class="text-inherit">Entire 3 BHK Cozy Apartment</a></h5>
+                                               <small class="text-muted">5 Aug to 10 Aug, 2023</small>
+                                            </div>
+                                        </div>
+                                        <div class="text-end lh-1">
+                                            <h5 class="mb-0">$890.00</h5>
+                                            <span class="badge bg-success">Paid</span>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item py-3 d-flex justify-content-between align-items-center px-0 pb-0">
+                                        <div class="d-flex align-items-center">
+                                            <a href="#"> <img src="../../assets/images/listing-img-4.jpg" alt="" class="img-fluid rounded img-4by3-lg"></a>
+                                            <div class="ms-3 lh-1">
+                                                <h5 class="mb-1"> <a href="#" class="text-inherit">Spacious 2 Bed Family Apartments</a></h5>
+                                               <small class="text-muted">10 July to 16 July, 2023</small>
+                                            </div>
+                                        </div>
+                                        <div class="text-end lh-1">
+                                            <h5 class="mb-0">$230.50</h5>
+                                            <span class="badge bg-danger">Cancel</span>
+                                        </div>
+                                    </li>
+                                  </ul>
+                             </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-5 col-12">
+                        <!-- Card -->
+                        <div class="card mb-4 border-0 shadow-sm">
+
+                            <!-- Card body -->
+                            <div class="card-body p-4 fs-5">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                <h4 class="card-title mb-0">Notification</h4>
+                                <a href="#" class="btn btn-outline-light border text-muted ">View All</a>
+                            </div>
+                             <div>
+                               <div class="mb-3 d-flex">
+                                <div>
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-dollar-sign text-primary"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg></span>
+                                </div>
+                                <div class="ms-3 lh-1">
+                                    <h5 class="mb-1">Review your payouts</h5>
+                                    <span>Check you wallet for the new payouts...</span>
+                                </div>
+                               </div>
+                               <div class="mb-3 d-flex">
+                                <div>
+                                    <span>
+                                       
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star text-warning"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                </div>
+                                <div class="ms-3 lh-1">
+                                    <h5 class="mb-1">New Review from John Doe</h5>
+                                    <span>Review your payouts
+                                        Check you wallet for the new payouts...
+                                        </span>
+                                </div>
+                               </div>
+                               <div class="mb-3 d-flex">
+                                <div>
+                                    <span>
+                                       
+
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar text-success"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                                </div>
+                                <div class="ms-3 lh-1">
+                                    <h5 class="mb-1">New Booking for Cozy home</h5>
+                                    <span>Review your payouts
+                                        Verify your new booking  cozy home, confirm...
+                                        </span>
+                                </div>
+                               </div>
+                               <div class="mb-3 d-flex">
+                                <div>
+                                    <span>
+                                       
+
+                                        
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text text-primary"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                                </div>
+                                <div class="ms-3 lh-1">
+                                    <h5 class="mb-1">Your  Tax Invoice Generated</h5>
+                                    <span>Review your payouts
+                                        Your last transaction tax invoice ready to print...
+                                        </span>
+                                </div>
+                               </div>
+                               <div class="mb-3 d-flex">
+                                <div>
+                                    <span>
+                                       
+
+                                        
+
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-lock"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                                </div>
+                                <div class="ms-3 lh-1">
+                                    <h5 class="mb-1">2FA Factor Authenteication Required</h5>
+                                    <span>Provide two different authentication factors to verify...
+                                        </span>
+                                </div>
+                               </div>
+                             </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+    <!-- scripts  -->
+    @@include("../../partials/scripts.html")
+</body>
+
+</html>

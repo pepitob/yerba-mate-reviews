@@ -1,0 +1,16 @@
+// forms
+
+.form-focus-none {
+    &.form-control {
+      &:focus {
+        outline: none;
+        box-shadow: none;
+      }
+    }
+    &.form-select {
+        &:focus {
+          outline: none;
+          box-shadow: none;
+        }
+      }
+  }

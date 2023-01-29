@@ -1,0 +1,812 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    @@include("../../partials/head.html")
+    <title>Dashboard - Rentkit - Directory & Listings Bootstrap 5 Template.</title>
+
+</head>
+<!-- error  -->
+
+<body class="bg-gray-200">
+    <!-- Wrapper -->
+    <div class="chat-layout" id="db-wrapper">
+
+        @@include("../../partials/navbar-vertical-compact.html",{
+        "page": "chat"
+        })
+        <div  id="page-content-for-mini">
+            @@include("../../partials/dashboard-header.html")
+            <!-- Container fluid -->
+            <div class="container-fluid px-lg-10  p-4">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-12">
+                        <div class="mb-4 d-flex justify-content-between align-items-center">
+                            <div>
+                                <h1 class="mb-0 h2 fw-bold">Message</h1>
+
+
+                            </div>
+                            <div class="d-flex">
+
+                                <a href="#" class="btn btn-primary">Start New Conversation</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card border-0 shadow-sm">
+                            <div class="">
+                                <div class="row g-0">
+                                    <div class="col-lg-3 col-12 ">
+                                        <div class=" vh-100 border-end-lg overflow-hidden">
+                                            <div class=" p-4">
+                                                <h4 class="mb-3">All Messages</h4>
+                                                <!-- Form -->
+                                                <form class="d-flex align-items-center">
+
+                                                    <input type="search" class="form-control"
+                                                        placeholder="Search property, task etc..." />
+                                                </form>
+                                            </div>
+                                            <div class="">
+                                                <div class="px-3 pb-4" data-simplebar style="height: 780px;">
+                                                    <div class="nav flex-column nav-pills nav-light-pills"
+                                                        id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                                        <a class="nav-link  border-bottom active contacts-link"
+                                                            id="v-pills-msg-first-tab" data-bs-toggle="pill"
+                                                            data-bs-target="#v-pills-msg-first" role="tab"
+                                                            aria-controls="v-pills-msg-first" aria-selected="true"
+                                                            href="#">
+                                                            <div class="d-flex fs-6">
+                                                                <img src="../../assets/images/avatar-1.jpg" alt=""
+                                                                    class="mt-1 avatar avatar-sm rounded-circle">
+                                                                <div class="ms-3 w-100">
+                                                                    <div class="d-flex justify-content-between mb-1 ">
+                                                                        <span class=" text-inherit">Inquiry</span>
+                                                                        <span class=" text-inherit">10:45 AM</span>
+
+                                                                    </div>
+                                                                    <div class="lh-1 mb-2">
+                                                                        <h5 class="mb-0">George</h5>
+                                                                        <p class="mb-0  text-dark">Your place looks
+                                                                            perfect for our family...</p>
+
+                                                                    </div>
+                                                                    <span class="text-muted ">Jan 12 - Jan 22
+                                                                        2022</span>
+                                                                </div>
+                                                            </div>
+
+                                                        </a>
+                                                        <a class="nav-link  border-bottom contacts-link " id="v-pills-msg-second-tab"
+                                                            data-bs-toggle="pill" data-bs-target="#v-pills-msg-second"
+                                                            role="tab" aria-controls="v-pills-msg-second"
+                                                            aria-selected="true" href="#">
+                                                            <div class="d-flex fs-6">
+                                                                <img src="../../assets/images/avatar-2.jpg" alt=""
+                                                                    class="mt-1 avatar avatar-sm rounded-circle">
+                                                                <div class="ms-3 w-100">
+                                                                    <div class="d-flex justify-content-between mb-1  ">
+                                                                        <span class=" text-inherit">Past Guest</span>
+                                                                        <span class=" text-inherit">10:50 AM</span>
+
+                                                                    </div>
+                                                                    <div class="lh-1 mb-2">
+                                                                        <h5 class="mb-0">Linda</h5>
+                                                                        <p class="mb-0 text-dark ">That’ok we look
+                                                                            forward to next time to visit your...</p>
+                                                                    </div>
+                                                                    <span class="text-muted ">Jan 12 - Jan 22
+                                                                        2022</span>
+
+                                                                </div>
+                                                            </div>
+
+                                                        </a>
+                                                        <a class="nav-link  border-bottom contacts-link " id="v-pills-msg-third-tab"
+                                                            data-bs-toggle="pill" data-bs-target="#v-pills-msg-third"
+                                                            role="tab" aria-controls="v-pills-msg-third"
+                                                            aria-selected="true" href="#">
+                                                            <div class="d-flex fs-6">
+                                                                <img src="../../assets/images/avatar-3.jpg" alt=""
+                                                                    class="mt-1 avatar avatar-sm rounded-circle">
+                                                                <div class="ms-3 w-100">
+                                                                    <div class="d-flex justify-content-between mb-1  ">
+                                                                        <span class=" text-inherit">Booking
+                                                                            Confirmed</span>
+                                                                        <span class=" text-inherit">10:40 AM</span>
+
+                                                                    </div>
+                                                                    <div class="lh-1 mb-2">
+                                                                        <h5 class="mb-0">Jolene</h5>
+                                                                        <p class="mb-0 text-dark ">Thank you for your
+                                                                            fast confirmation & response..</p>
+                                                                    </div>
+                                                                    <span class="text-muted ">Jan 12 - Jan 22
+                                                                        2022</span>
+
+                                                                </div>
+                                                            </div>
+
+                                                        </a>
+                                                        <a class="nav-link  border-bottom contacts-link " id="v-pills-msg-fourth-tab"
+                                                            data-bs-toggle="pill" data-bs-target="#v-pills-msg-fourth"
+                                                            role="tab" aria-controls="v-pills-msg-fourth"
+                                                            aria-selected="true" href="#">
+                                                            <div class="d-flex fs-6">
+                                                                <img src="../../assets/images/avatar-4.jpg" alt=""
+                                                                    class="mt-1 avatar avatar-sm rounded-circle">
+                                                                <div class="ms-3 w-100">
+                                                                    <div class="d-flex justify-content-between mb-1  ">
+                                                                        <span class=" text-inherit">Inquiry</span>
+                                                                        <span class=" text-inherit">10:40 AM</span>
+
+                                                                    </div>
+                                                                    <div class="lh-1 mb-2">
+                                                                        <h5 class="mb-0">Matthew</h5>
+                                                                        <p class="mb-0 text-dark ">Your place looks
+                                                                            perfect for our family...</p>
+                                                                    </div>
+                                                                    <span class="text-muted ">Jan 12 - Jan 22
+                                                                        2022</span>
+
+                                                                </div>
+                                                            </div>
+
+                                                        </a>
+                                                        <a class="nav-link  border-bottom contacts-link " id="v-pills-msg-fifth-tab"
+                                                            data-bs-toggle="pill" data-bs-target="#v-pills-msg-fifth"
+                                                            role="tab" aria-controls="v-pills-msg-fifth"
+                                                            aria-selected="true" href="#">
+                                                            <div class="d-flex fs-6">
+                                                                <img src="../../assets/images/avatar-5.jpg" alt=""
+                                                                    class="mt-1 avatar avatar-sm rounded-circle">
+                                                                <div class="ms-3 w-100">
+                                                                    <div class="d-flex justify-content-between mb-1  ">
+                                                                        <span class=" text-inherit">Cecelia</span>
+                                                                        <span class=" text-inherit">09:40 AM</span>
+
+                                                                    </div>
+                                                                    <div class="lh-1 mb-2">
+                                                                        <h5 class="mb-0">Triahn</h5>
+                                                                        <p class="mb-0 text-dark ">Your place looks
+                                                                            perfect for our family...</p>
+                                                                    </div>
+                                                                    <span class="text-muted ">Jan 12 - Jan 22
+                                                                        2022</span>
+
+                                                                </div>
+                                                            </div>
+
+                                                        </a>
+                                                        <a class="nav-link  border-bottom contacts-link " id="v-pills-msg-sixth-tab"
+                                                            data-bs-toggle="pill" data-bs-target="#v-pills-msg-sixth"
+                                                            role="tab" aria-controls="v-pills-msg-sixth"
+                                                            aria-selected="true" href="#">
+                                                            <div class="d-flex fs-6">
+                                                                <img src="../../assets/images/avatar-3.jpg" alt=""
+                                                                    class="mt-1 avatar avatar-sm rounded-circle">
+                                                                <div class="ms-3 w-100">
+                                                                    <div class="d-flex justify-content-between mb-1  ">
+                                                                        <span class=" text-inherit">Booking
+                                                                            Confirmed</span>
+                                                                        <span class=" text-inherit">09:40 AM</span>
+
+                                                                    </div>
+                                                                    <div class="lh-1 mb-2">
+                                                                        <h5 class="mb-0">Ronnie</h5>
+                                                                        <p class="mb-0 text-dark ">One last question: do
+                                                                            you have a free wifi...</p>
+                                                                    </div>
+                                                                    <span class="text-muted ">Jan 12 - Jan 22
+                                                                        2022</span>
+
+                                                                </div>
+                                                            </div>
+
+                                                        </a>
+                                                        <a class="nav-link  border-bottom contacts-link " id="v-pills-msg-seventh-tab"
+                                                            data-bs-toggle="pill" data-bs-target="#v-pills-msg-seventh"
+                                                            role="tab" aria-controls="v-pills-msg-seventh"
+                                                            aria-selected="true" href="#">
+                                                            <div class="d-flex fs-6">
+                                                                <img src="../../assets/images/avatar-1.jpg" alt=""
+                                                                    class="mt-1 avatar avatar-sm rounded-circle">
+                                                                <div class="ms-3 w-100">
+                                                                    <div class="d-flex justify-content-between mb-1  ">
+                                                                        <span class=" text-inherit">Confirmed - <span
+                                                                                class="link-success">Check in
+                                                                                Today</span></span>
+                                                                        <span class=" text-inherit">09:35 AM</span>
+
+                                                                    </div>
+                                                                    <div class="lh-1 mb-2">
+                                                                        <h5 class="mb-0">Gary</h5>
+                                                                        <p class="mb-0 text-dark ">Your place looks
+                                                                            perfect for our family...</p>
+                                                                    </div>
+                                                                    <span class="text-muted ">Jan 12 - Jan 22
+                                                                        2022</span>
+
+                                                                </div>
+                                                            </div>
+
+                                                        </a>
+                                                        <a class="nav-link  border-bottom contacts-link " id="v-pills-msg-eight-tab"
+                                                            data-bs-toggle="pill" data-bs-target="#v-pills-msg-eight"
+                                                            role="tab" aria-controls="v-pills-msg-seventh"
+                                                            aria-selected="true" href="#">
+                                                            <div class="d-flex fs-6">
+                                                                <img src="../../assets/images/avatar-4.jpg" alt=""
+                                                                    class="mt-1 avatar avatar-sm rounded-circle">
+                                                                <div class="ms-3 w-100">
+                                                                    <div class="d-flex justify-content-between mb-1  ">
+                                                                        <span class=" text-inherit">Confirmed - <span
+                                                                                class="link-success">Check in
+                                                                                Today</span></span>
+                                                                        <span class=" text-inherit">09:35 AM</span>
+
+                                                                    </div>
+                                                                    <div class="lh-1 mb-2">
+                                                                        <h5 class="mb-0">Mathhew</h5>
+                                                                        <p class="mb-0 text-dark ">Your place looks
+                                                                            perfect for our family...</p>
+                                                                    </div>
+                                                                    <span class="text-muted ">Jan 12 - Jan 22
+                                                                        2022</span>
+
+                                                                </div>
+                                                            </div>
+
+                                                        </a>
+
+
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-12">
+                                        <div
+                                            class="chat-body h-100  border-top border-top-lg-0 py-4 py-lg-0 position-lg-relative" data-simplebar="">
+                                            <div class="tab-content" id="v-pills-tabContent">
+                                                <a href="#" class="px-5 d-xl-none d-block" data-close><i
+                                                        class="bi bi-arrow-left me-2"></i> Back to list</a>
+                                                <div class="tab-pane fade show active" id="v-pills-msg-first"
+                                                    role="tabpanel" aria-labelledby="v-pills-msg-first-tab"
+                                                    tabindex="0">
+                                                    <div class="p-4 ">
+                                                        <div class="">
+                                                            <h4 class="mb-0">George</h4>
+
+
+                                                        </div>
+                                                        <div class="mt-4">
+                                                            <div class="d-flex mb-4">
+                                                                <img src="../../assets/images/avatar-1.jpg" alt=""
+                                                                    class="avatar avatar-md rounded-circle">
+                                                                <div class="ms-3">
+                                                                    <h5 class="mb-0">George</h5>
+                                                                    <p class="mb-0">Hi, my dog and i are travelling to
+                                                                        San Francisco for a few days and would love to
+                                                                        stay at your beautiful house.</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="d-flex mb-4">
+                                                                <img src="../../assets/images/avatar-2.jpg" alt=""
+                                                                    class="avatar avatar-md rounded-circle">
+                                                                <div class="ms-3">
+                                                                    <h5 class="mb-0">Linda</h5>
+                                                                    <p class="mb-0">Hi, George, that the sound great!
+                                                                        We’d love to host you and your pup.
+                                                                        Are there any question I can answer before you
+                                                                        book?</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="d-flex mb-4">
+                                                                <img src="../../assets/images/avatar-1.jpg" alt=""
+                                                                    class="avatar avatar-md rounded-circle">
+                                                                <div class="ms-3">
+                                                                    <h5 class="mb-0">George</h5>
+                                                                    <p class="mb-0">Actullay, I was wondering of you had
+                                                                        a view of the beach? I saw it mentioned in the
+                                                                        description, but didn’t see on in the photos.
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="d-flex mb-4">
+                                                                <img src="../../assets/images/avatar-2.jpg" alt=""
+                                                                    class="avatar avatar-md rounded-circle">
+                                                                <div class="ms-3">
+                                                                    <h5 class="mb-0">Linda</h5>
+                                                                    <p class="mb-0">We do. its lovey!.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                                <div class="tab-pane fade" id="v-pills-msg-second" role="tabpanel"
+                                                    aria-labelledby="v-pills-msg-second-tab" tabindex="0">
+                                                    <div class="p-4 ">
+                                                        <div class="">
+                                                            <h4 class="mb-0">Linda</h4>
+
+
+                                                        </div>
+                                                        <div class="mt-4">
+                                                            <div class="d-flex mb-4">
+                                                                <img src="../../assets/images/avatar-2.jpg" alt=""
+                                                                    class="avatar avatar-md rounded-circle">
+                                                                <div class="ms-3">
+                                                                    <h5 class="mb-0">Linda</h5>
+                                                                    <p class="mb-0">Hi, my dog and i are travelling to
+                                                                        San Francisco for a few days and would love to
+                                                                        stay at your beautiful house.</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="d-flex mb-4">
+                                                                <img src="../../assets/images/avatar-3.jpg" alt=""
+                                                                    class="avatar avatar-md rounded-circle">
+                                                                <div class="ms-3">
+                                                                    <h5 class="mb-0">Jolene</h5>
+                                                                    <p class="mb-0">Hi, Linda, that the sound great!
+                                                                        We’d love to host you and your pup.
+                                                                        Are there any question I can answer before you
+                                                                        book?</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="d-flex mb-4">
+                                                                <img src="../../assets/images/avatar-2.jpg" alt=""
+                                                                    class="avatar avatar-md rounded-circle">
+                                                                <div class="ms-3">
+                                                                    <h5 class="mb-0">Linda</h5>
+                                                                    <p class="mb-0">Actullay, I was wondering of you had
+                                                                        a view of the beach? I saw it mentioned in the
+                                                                        description, but didn’t see on in the photos.
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="d-flex mb-4">
+                                                                <img src="../../assets/images/avatar-3.jpg" alt=""
+                                                                    class="avatar avatar-md rounded-circle">
+                                                                <div class="ms-3">
+                                                                    <h5 class="mb-0">Jolene</h5>
+                                                                    <p class="mb-0">We do. its lovey!.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="v-pills-msg-third" role="tabpanel"
+                                                    aria-labelledby="v-pills-msg-third-tab" tabindex="0">
+                                                    <div class="p-4 ">
+                                                        <div class="">
+                                                            <h4 class="mb-0">Jolena</h4>
+
+
+                                                        </div>
+                                                        <div class="mt-4">
+                                                            <div class="d-flex mb-4">
+                                                                <img src="../../assets/images/avatar-3.jpg" alt=""
+                                                                    class="avatar avatar-md rounded-circle">
+                                                                <div class="ms-3">
+                                                                    <h5 class="mb-0">Jolena</h5>
+                                                                    <p class="mb-0">Hi, my dog and i are travelling to
+                                                                        San Francisco for a few days and would love to
+                                                                        stay at your beautiful house.</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="d-flex mb-4">
+                                                                <img src="../../assets/images/avatar-4.jpg" alt=""
+                                                                    class="avatar avatar-md rounded-circle">
+                                                                <div class="ms-3">
+                                                                    <h5 class="mb-0">Matthew</h5>
+                                                                    <p class="mb-0">Hi, Jolena, that the sound great!
+                                                                        We’d love to host you and your pup.
+                                                                        Are there any question I can answer before you
+                                                                        book?</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="d-flex mb-4">
+                                                                <img src="../../assets/images/avatar-3.jpg" alt=""
+                                                                    class="avatar avatar-md rounded-circle">
+                                                                <div class="ms-3">
+                                                                    <h5 class="mb-0">Jolena</h5>
+                                                                    <p class="mb-0">Actullay, I was wondering of you had
+                                                                        a view of the beach? I saw it mentioned in the
+                                                                        description, but didn’t see on in the photos.
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="d-flex mb-4">
+                                                                <img src="../../assets/images/avatar-4.jpg" alt=""
+                                                                    class="avatar avatar-md rounded-circle">
+                                                                <div class="ms-3">
+                                                                    <h5 class="mb-0">Matthew</h5>
+                                                                    <p class="mb-0">We do. its lovey!.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="v-pills-msg-fourth" role="tabpanel"
+                                                    aria-labelledby="v-pills-msg-fourth-tab" tabindex="0">
+                                                    <div class="p-4 ">
+                                                        <div class="">
+                                                            <h4 class="mb-0">Matthew</h4>
+
+
+                                                        </div>
+                                                        <div class="mt-4">
+                                                            <div class="d-flex mb-4">
+                                                                <img src="../../assets/images/avatar-3.jpg" alt=""
+                                                                    class="avatar avatar-md rounded-circle">
+                                                                <div class="ms-3">
+                                                                    <h5 class="mb-0">Matthew</h5>
+                                                                    <p class="mb-0">Hi, my dog and i are travelling to
+                                                                        San Francisco for a few days and would love to
+                                                                        stay at your beautiful house.</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="d-flex mb-4">
+                                                                <img src="../../assets/images/avatar-4.jpg" alt=""
+                                                                    class="avatar avatar-md rounded-circle">
+                                                                <div class="ms-3">
+                                                                    <h5 class="mb-0">Cecelia</h5>
+                                                                    <p class="mb-0">Hi, Matthew, that the sound great!
+                                                                        We’d love to host you and your pup.
+                                                                        Are there any question I can answer before you
+                                                                        book?</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="d-flex mb-4">
+                                                                <img src="../../assets/images/avatar-3.jpg" alt=""
+                                                                    class="avatar avatar-md rounded-circle">
+                                                                <div class="ms-3">
+                                                                    <h5 class="mb-0">Matthew</h5>
+                                                                    <p class="mb-0">Actullay, I was wondering of you had
+                                                                        a view of the beach? I saw it mentioned in the
+                                                                        description, but didn’t see on in the photos.
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="d-flex mb-4">
+                                                                <img src="../../assets/images/avatar-4.jpg" alt=""
+                                                                    class="avatar avatar-md rounded-circle">
+                                                                <div class="ms-3">
+                                                                    <h5 class="mb-0">Cecelia</h5>
+                                                                    <p class="mb-0">We do. its lovey!.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="v-pills-msg-fifth" role="tabpanel"
+                                                    aria-labelledby="v-pills-msg-fifth-tab" tabindex="0">
+                                                    <div class="p-4 ">
+                                                        <div class="">
+                                                            <h4 class="mb-0">Triahn</h4>
+
+
+                                                        </div>
+                                                        <div class="mt-4">
+                                                            <div class="d-flex mb-4">
+                                                                <img src="../../assets/images/avatar-4.jpg" alt=""
+                                                                    class="avatar avatar-md rounded-circle">
+                                                                <div class="ms-3">
+                                                                    <h5 class="mb-0">Triahn</h5>
+                                                                    <p class="mb-0">Hi, my dog and i are travelling to
+                                                                        San Francisco for a few days and would love to
+                                                                        stay at your beautiful house.</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="d-flex mb-4">
+                                                                <img src="../../assets/images/avatar-5.jpg" alt=""
+                                                                    class="avatar avatar-md rounded-circle">
+                                                                <div class="ms-3">
+                                                                    <h5 class="mb-0">Ronnie</h5>
+                                                                    <p class="mb-0">Hi, Triahn, that the sound great!
+                                                                        We’d love to host you and your pup.
+                                                                        Are there any question I can answer before you
+                                                                        book?</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="d-flex mb-4">
+                                                                <img src="../../assets/images/avatar-4.jpg" alt=""
+                                                                    class="avatar avatar-md rounded-circle">
+                                                                <div class="ms-3">
+                                                                    <h5 class="mb-0">Triahn</h5>
+                                                                    <p class="mb-0">Actullay, I was wondering of you had
+                                                                        a view of the beach? I saw it mentioned in the
+                                                                        description, but didn’t see on in the photos.
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="d-flex mb-4">
+                                                                <img src="../../assets/images/avatar-5.jpg" alt=""
+                                                                    class="avatar avatar-md rounded-circle">
+                                                                <div class="ms-3">
+                                                                    <h5 class="mb-0">Ronnie</h5>
+                                                                    <p class="mb-0">We do. its lovey!.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="v-pills-msg-sixth" role="tabpanel"
+                                                    aria-labelledby="v-pills-msg-sixth-tab" tabindex="0">
+                                                    <div class="p-4 ">
+                                                        <div class="">
+                                                            <h4 class="mb-0">Ronnie</h4>
+
+
+                                                        </div>
+                                                        <div class="mt-4">
+                                                            <div class="d-flex mb-4">
+                                                                <img src="../../assets/images/avatar-3.jpg" alt=""
+                                                                    class="avatar avatar-md rounded-circle">
+                                                                <div class="ms-3">
+                                                                    <h5 class="mb-0">Ronnie</h5>
+                                                                    <p class="mb-0">Hi, my dog and i are travelling to
+                                                                        San Francisco for a few days and would love to
+                                                                        stay at your beautiful house.</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="d-flex mb-4">
+                                                                <img src="../../assets/images/avatar-1.jpg" alt=""
+                                                                    class="avatar avatar-md rounded-circle">
+                                                                <div class="ms-3">
+                                                                    <h5 class="mb-0">Gary</h5>
+                                                                    <p class="mb-0">Hi, Triahn, that the sound great!
+                                                                        We’d love to host you and your pup.
+                                                                        Are there any question I can answer before you
+                                                                        book?</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="d-flex mb-4">
+                                                                <img src="../../assets/images/avatar-3.jpg" alt=""
+                                                                    class="avatar avatar-md rounded-circle">
+                                                                <div class="ms-3">
+                                                                    <h5 class="mb-0">Ronnie</h5>
+                                                                    <p class="mb-0">Actullay, I was wondering of you had
+                                                                        a view of the beach? I saw it mentioned in the
+                                                                        description, but didn’t see on in the photos.
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="d-flex mb-4">
+                                                                <img src="../../assets/images/avatar-1.jpg" alt=""
+                                                                    class="avatar avatar-md rounded-circle">
+                                                                <div class="ms-3">
+                                                                    <h5 class="mb-0">Gary</h5>
+                                                                    <p class="mb-0">We do. its lovey!.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="v-pills-msg-seventh" role="tabpanel"
+                                                    aria-labelledby="v-pills-msg-seventh-tab" tabindex="0">
+                                                    <div class="p-4 ">
+                                                        <div class="">
+                                                            <h4 class="mb-0">Gary</h4>
+
+
+                                                        </div>
+                                                        <div class="mt-4">
+                                                            <div class="d-flex mb-4">
+                                                                <img src="../../assets/images/avatar-1.jpg" alt=""
+                                                                    class="avatar avatar-md rounded-circle">
+                                                                <div class="ms-3">
+                                                                    <h5 class="mb-0">Gary</h5>
+                                                                    <p class="mb-0">Hi, my dog and i are travelling to
+                                                                        San Francisco for a few days and would love to
+                                                                        stay at your beautiful house.</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="d-flex mb-4">
+                                                                <img src="../../assets/images/avatar-4.jpg" alt=""
+                                                                    class="avatar avatar-md rounded-circle">
+                                                                <div class="ms-3">
+                                                                    <h5 class="mb-0">George</h5>
+                                                                    <p class="mb-0">Hi, Triahn, that the sound great!
+                                                                        We’d love to host you and your pup.
+                                                                        Are there any question I can answer before you
+                                                                        book?</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="d-flex mb-4">
+                                                                <img src="../../assets/images/avatar-1.jpg" alt=""
+                                                                    class="avatar avatar-md rounded-circle">
+                                                                <div class="ms-3">
+                                                                    <h5 class="mb-0">Gary</h5>
+                                                                    <p class="mb-0">Actullay, I was wondering of you had
+                                                                        a view of the beach? I saw it mentioned in the
+                                                                        description, but didn’t see on in the photos.
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="d-flex mb-4">
+                                                                <img src="../../assets/images/avatar-4.jpg" alt=""
+                                                                    class="avatar avatar-md rounded-circle">
+                                                                <div class="ms-3">
+                                                                    <h5 class="mb-0">George</h5>
+                                                                    <p class="mb-0">We do. its lovey!.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="v-pills-msg-eight" role="tabpanel"
+                                                    aria-labelledby="v-pills-msg-seventh-tab" tabindex="0">
+                                                    <div class="p-4 ">
+                                                        <div class="">
+                                                            <h4 class="mb-0">Matthew</h4>
+
+
+                                                        </div>
+                                                        <div class="mt-4">
+                                                            <div class="d-flex mb-4">
+                                                                <img src="../../assets/images/avatar-1.jpg" alt=""
+                                                                    class="avatar avatar-md rounded-circle">
+                                                                <div class="ms-3">
+                                                                    <h5 class="mb-0">Matthew</h5>
+                                                                    <p class="mb-0">Hi, my dog and i are travelling to
+                                                                        San Francisco for a few days and would love to
+                                                                        stay at your beautiful house.</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="d-flex mb-4">
+                                                                <img src="../../assets/images/avatar-4.jpg" alt=""
+                                                                    class="avatar avatar-md rounded-circle">
+                                                                <div class="ms-3">
+                                                                    <h5 class="mb-0">George</h5>
+                                                                    <p class="mb-0">Hi, Triahn, that the sound great!
+                                                                        We’d love to host you and your pup.
+                                                                        Are there any question I can answer before you
+                                                                        book?</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="d-flex mb-4">
+                                                                <img src="../../assets/images/avatar-1.jpg" alt=""
+                                                                    class="avatar avatar-md rounded-circle">
+                                                                <div class="ms-3">
+                                                                    <h5 class="mb-0">Matthew</h5>
+                                                                    <p class="mb-0">Actullay, I was wondering of you had
+                                                                        a view of the beach? I saw it mentioned in the
+                                                                        description, but didn’t see on in the photos.
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="d-flex mb-4">
+                                                                <img src="../../assets/images/avatar-4.jpg" alt=""
+                                                                    class="avatar avatar-md rounded-circle">
+                                                                <div class="ms-3">
+                                                                    <h5 class="mb-0">George</h5>
+                                                                    <p class="mb-0">We do. its lovey!.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="position-lg-absolute bottom-0 mt-auto p-4 w-100 ">
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-12">
+                                        <div class="border-start-lg  border-top border-top-lg-0  p-4 w-100 h-100 d-none d-lg-block "
+                                            data-simplebar style="height: 770px;">
+                                            <h4 class="mb-4">Reservation details</h4>
+                                            <div class="d-flex border-bottom pb-4 mb-4">
+                                                <div class="w-100">
+                                                    <small class="text-danger">Inquiry</small>
+                                                    <h4>Matthew</h4>
+                                                    <div>2 Guests</div>
+                                                    <div>4 Nights</div>
+                                                    <div>$1,875.70</div>
+                                                </div>
+                                                <div class="">
+                                                    <img src="../../assets/images/avatar-1.jpg" alt=""
+                                                        class="avatar avatar-md rounded-circle">
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <p class="mb-0">Pre-approved this inquiry of 13-17 works for your palce.
+                                                    These dates will stay available until another guest book your place.
+                                                </p>
+                                                <div class="d-grid my-4">
+                                                    <a href="#" class="btn btn-primary mb-2">Approved</a>
+                                                    <a href="#" class="btn btn-outline-primary">Decline</a>
+                                                </div>
+                                                <div class="d-flex border-bottom pb-4 mb-4">
+                                                    <img src="../../assets/images/shield-check.svg" alt="">
+                                                    <p class="mb-0 ms-3">Protected by the Rent At Host Guarantee and
+                                                        Host Protection Insurance</p>
+
+
+                                                </div>
+                                                <div class="border-bottom pb-4 mb-4">
+                                                    <ul class="list-unstyled">
+                                                        <li class="mb-1"><i class="bi bi-star me-2"></i>16 reviews</li>
+                                                        <li class="mb-1"><i
+                                                                class="bi bi-check2-circle me-2"></i>Verified</li>
+                                                        <li class="mb-1"><i class="bi bi-house-door me-2"></i>Joined
+                                                            July 24,2022</li>
+                                                        <li class="mb-1"><i class="bi bi-globe me-2"></i>Lives in
+                                                            Belgium</li>
+                                                        <li class="mb-1"><i class="bi bi-chat me-2"></i>Speaks English,
+                                                            French</li>
+                                                    </ul>
+                                                    <a href="#">View profile</a>
+                                                </div>
+                                                <ul class="list-unstyled">
+                                                    <li class="mb-1"><i class="bi bi-question-circle me-2"></i>Help
+                                                        center</li>
+                                                    <li class="mb-1"><i class="bi bi-flag me-2"></i>Report </li>
+
+                                                </ul>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div>
+                Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images,
+                lists, etc.
+            </div>
+            <div class="dropdown mt-3">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                    Dropdown button
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- scripts  -->
+    @@include("../../partials/scripts.html")
+</body>
+
+</html>

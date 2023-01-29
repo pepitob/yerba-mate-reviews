@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    @@include("../../partials/head.html")
+    <title>Dashboard - Rentkit - Directory & Listings Bootstrap 5 Template.</title>
+
+</head>
+<!-- error  -->
+
+<body class="bg-gray-200">
+    <!-- Wrapper -->
+    <div id="db-wrapper">
+
+        @@include("../../partials/navbar-vertical-compact.html",{
+            "page": "accounts"
+        })
+        <div id="page-content-for-mini">
+            @@include("../../partials/dashboard-header.html")
+            <!-- Container fluid -->
+            <div class="container-fluid px-lg-10  p-4">
+                <div class="row">
+                    <div class=" col-xl-8 col-md-12 col-12">
+
+                        <div class="mb-4">
+                            <h1 class="mb-0 fw-bold h2">Accounts</h1>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="bg-gray-300 rounded-3 px-3 mb-4">
+                                <ul class="nav nav-lb-tab">
+                                    <li class="nav-item">
+                                      <a class="nav-link "  href="accounts-edit.html">Edit Profile</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a class="nav-link" href="accounts-security.html">Security</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a class="nav-link " href="accounts-social-profile.html">Social profiles</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a class="nav-link active" href="accounts-notification.html">Notifications</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link " href="accounts-profile-privacy.html">Profile privacy</a>
+                                      </li>
+                                      <li class="nav-item">
+                                        <a class="nav-link " href="accounts-delete.html">Delete</a>
+                                      </li>
+                                  </ul>
+                                </div>
+                                <div class="card border-0 shadow-sm">
+                                    <!-- Card header -->
+                                    <div class="card-header d-flex justify-content-between align-items-center p-4 bg-white">
+                                        <div>
+                                            <!-- Notification -->
+                                            <h3 class="mb-0">Notifications</h3>
+                                            <p class="mb-0">
+                                                You will get only notification what have enabled.
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" type="checkbox" id="checkAll" checked="">
+                                                <label class="form-check-label" for="checkAll"></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Card body -->
+                                    <div class="card-body p-4">
+                                        <div class="mb-5">
+                                            <h4 class="mb-0">Security Alerts</h4>
+                                            <p>
+                                                You will get only those email notification what you want.
+                                            </p>
+                                            <!-- List group -->
+                                            <ul class="list-group list-group-flush">
+                                                    <!-- List group item -->
+                                                <li class="list-group-item d-flex align-items-center justify-content-between px-0 py-2">
+                                                    <div>Email me whenever encounter unusual activity</div>
+                                                    <div>
+                                                        <div class="form-check form-switch">
+                                                            <input type="checkbox" class="form-check-input" id="switchOne" checked="">
+                                                            <label class="form-check-label" for="switchOne"></label>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                    <!-- List group item -->
+                                                <li class="list-group-item d-flex align-items-center justify-content-between px-0 py-2">
+                                                    <div>Email me if new browser is used to sign in</div>
+                                                    <div>
+                                                        <div class="form-check form-switch">
+                                                            <input type="checkbox" class="form-check-input" id="switchTwo">
+                                                            <label class="form-check-label" for="switchTwo"></label>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="mb-5">
+                                            <h4 class="mb-0">News</h4>
+                                            <p>
+                                                You will get only those email notification what you want.
+                                            </p>
+                                            <!-- List group-->
+                                            <ul class="list-group list-group-flush">
+                                                    <!-- List group item -->
+                                                <li class="list-group-item d-flex align-items-center justify-content-between px-0 py-2">
+                                                    <div>Notify me by email about sales and latest news</div>
+                                                    <div>
+                                                        <div class="form-check form-switch">
+                                                            <input type="checkbox" class="form-check-input" id="switchThree" checked="">
+                                                            <label class="form-check-label" for="switchThree"></label>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <!-- List group item -->
+                                                <li class="list-group-item d-flex align-items-center justify-content-between px-0 py-2">
+                                                    <div>Email me about new features and updates</div>
+                                                    <div>
+                                                        <div class="form-check form-switch">
+                                                            <input type="checkbox" class="form-check-input" id="switchFour">
+                                                            <label class="form-check-label" for="switchFour"></label>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <!-- List group item -->
+                                                <li class="list-group-item d-flex align-items-center justify-content-between px-0 py-2">
+                                                    <div>Email me about tips on using account</div>
+                                                    <div>
+                                                        <div class="form-check form-switch">
+                                                            <input type="checkbox" class="form-check-input" id="switchFive" checked="">
+                                                            <label class="form-check-label" for="switchFive"></label>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <!-- Content -->
+                                            <h4 class="mb-0">Courses</h4>
+                                            <p>
+                                                You will get only those email notification what you want.
+                                            </p>
+                                                <!-- List group -->
+                                            <ul class="list-group list-group-flush mb-4">
+                                                    <!-- List group item -->
+                                                <li class="list-group-item d-flex justify-content-between px-0">
+                                                    <div>
+                                                        <h5 class="mb-0">Updates from Classes You're Taking</h5>
+                                                        <span class="text-body">Announcements, events, and tips and tricks.</span>
+                                                    </div>
+                                                    <div>
+                                                        <div class="form-check form-switch">
+                                                            <input type="checkbox" class="form-check-input" id="switchSix" checked="">
+                                                            <label class="form-check-label" for="switchSix"></label>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                    <!-- List group item -->
+                                                <li class="list-group-item d-flex justify-content-between px-0">
+                                                    <div>
+                                                        <h5 class="mb-0">Updates from Teacher Discussions</h5>
+                                                        <span class="text-body">Public Discussions outside of a class that teachers
+                                                            share to all of their followers.</span>
+                                                    </div>
+                                                    <div>
+                                                        <div class="form-check form-switch">
+                                                            <input type="checkbox" class="form-check-input" id="switchSeven">
+                                                            <label class="form-check-label" for="switchSeven"></label>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                    <!-- List group item -->
+                                                <li class="list-group-item d-flex justify-content-between px-0">
+                                                    <div>
+                                                        <h5 class="mb-0">Personalized Class Recommendations</h5>
+                                                        <span class="text-body">Weekly recommendations tailored to your
+                                                            interests.</span>
+                                                    </div>
+                                                    <div>
+                                                        <div class="form-check form-switch">
+                                                            <input type="checkbox" class="form-check-input" id="switchEight">
+                                                            <label class="form-check-label" for="switchEight"></label>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                    <!-- List group item -->
+                                                <li class="list-group-item d-flex justify-content-between px-0">
+                                                    <div>
+                                                        <h5 class="mb-0">Featured content</h5>
+                                                        <p class="mb-0 text-body">Tips on Courses and dashboard usage, workshop, books,
+                                                            tutorials and many insightful articles.</p>
+                                                    </div>
+                                                    <div>
+                                                        <div class="form-check form-switch">
+                                                            <input type="checkbox" class="form-check-input" id="switchNine">
+                                                            <label class="form-check-label" for="switchNine"></label>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                    <!-- List group item -->
+                                                <li class="list-group-item d-flex justify-content-between px-0">
+                                                    <div>
+                                                        <h5 class="mb-0">Product updates</h5>
+                                                        <p class="mb-0 text-body">We'll send you a newsletter announcing essential
+                                                            product updates in CoursesUI.</p>
+                                                    </div>
+                                                    <div>
+                                                        <div class="form-check form-switch">
+                                                            <input type="checkbox" class="form-check-input" id="switchTen">
+                                                            <label class="form-check-label" for="switchTen"></label>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <!-- List group item -->
+                                                <li class="list-group-item d-flex justify-content-between px-0">
+                                                    <div>
+                                                        <h5 class="mb-0">Events and offers</h5>
+                                                        <p class="mb-0 text-body">Announcing promos and upcoming events,such as Ask Me
+                                                            Anything sessions and webinars.</p>
+                                                    </div>
+                                                    <div>
+                                                        <div class="form-check form-switch">
+                                                            <input type="checkbox" class="form-check-input" id="switchEleven">
+                                                            <label class="form-check-label" for="switchEleven"></label>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <!-- Short note -->
+                                            <a href="#" class="text-danger mb-2 d-block">
+                                                <u>Unsubscribe from all of the above</u>
+                                            </a>
+                                            <p class="mb-0 ">
+                                                Please note: you'll still receive important administrative
+                                                emails,such as password resets.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+                </div>
+              
+            </div>
+
+
+        </div>
+    </div>
+
+
+    </div>
+    <!-- scripts  -->
+    @@include("../../partials/scripts.html")
+</body>
+
+</html>
