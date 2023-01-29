@@ -1,0 +1,660 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  @@include("../partials/head.html")
+  <title>Homepage - Rentkit - Directory & Listings Bootstrap 5 Template.</title>
+
+</head>
+
+<body>
+  <!-- Navbar -->
+  @@include("../partials/navbar.html",{
+  "classList": "menu-space header-position header-white",
+  "container": "container"
+  })
+
+  <!-- content -->
+  <div class="d-flex flex-wrap w-100">
+    <div class="flex-1" style="min-width: 0;">
+      <div class="w-100">
+        <!-- hero section -->
+        <div class="position-relative d-flex pt-lg-6 flex-column min-vh-xl-100">
+          <span class="position-absolute top-0 end-0 bottom-0 start-0" style=" background-size: cover;
+          background-position: 50%; background-image: url(../assets/images/hero-img-second.jpg);">
+          </span>
+          <div class="position-relative d-flex flex-column justify-content-center pt-12 z-2">
+            <div class="container">
+              <div class="row ">
+                <div class="col-lg-5 col-md-6  col-12 ">
+                  <div class="pt-lg-10 py-10 py-md-14 position-relative">
+                    <div class="text-center mb-10">
+
+                    </div>
+                    <!-- card -->
+                    <div class="card border-0">
+                      <div class="card-body p-6">
+                        <h1 class=" fw-bold mb-1">Find the great rentals </h1>
+                        <p class="lead ">Find and book rental rooms, hotels, villa, and trip.</p>
+                        <!-- select -->
+                        <select class="select2 ">
+                          <option>Where</option>
+                          <option value="Ahmedabad">Ahmedabad</option>
+                          <option value="Surat">Surat</option>
+                          <option value="Rajkot">Rajkot</option>
+                          <option value="Udaipur">Udaipur</option>
+                          <option value="Daman">Daman</option>
+                          <option value="Pune">Pune</option>
+                          <option value="Jaipur">Jaipur</option>
+                        </select>
+                        <!-- from group -->
+                        <div class="form-group  my-3">
+                          <input type="text" id="dateSelect" class="form-control " placeholder="Check in / Check out">
+                        </div>
+                        <!-- select -->
+                        <select class="select2">
+                          <option>Guest</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                        </select>
+                        <!-- btn -->
+                        <div class="d-grid mt-3 ">
+                          <a href="#" class="btn btn-primary">Search</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- features -->
+      <div class="py-lg-11 py-7">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-12">
+              <div class="mb-3">
+                <!-- heading -->
+                <i class="mdi mdi-calendar-clock text-primary h1 mb-4 d-block "></i>
+                <h5 class="mb-2">Vacation is Safe With Us </h5>
+                <p>Secure payments, 24/7 support and a Book with Confidence guarantee.</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-12">
+              <!-- feature -->
+              <div class="mb-3">
+                <i class="mdi mdi-bag-personal text-primary h1 mb-4 d-block "></i>
+                <h5 class="mb-2">Better Vacations Here </h5>
+                <p>From booking to staying, the whole process is easy and enjoyable</p>
+              </div>
+            </div>
+            <!-- feature -->
+            <div class="col-md-3 col-12">
+              <div class="mb-3">
+                <i class="mdi mdi-tea text-primary h1 mb-4 d-block "></i>
+                <h5 class="mb-2">All the Comforts of Home </h5>
+                <p>Enjoy full kitchens, laundry, pools, yards and more</p>
+              </div>
+            </div>
+            <!-- feature -->
+            <div class="col-md-3 col-12">
+              <div class="mb-3">
+                <i class="mdi mdi-cash text-primary h1 mb-4 d-block "></i>
+                <h5 class="mb-2">More for Less </h5>
+                <p>More space, more privacy, more amenities — more value</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- image gallery -->
+      <div class="pb-lg-11 pb-7 ">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+              <!-- section heading -->
+              <div class="mb-5">
+                <h2 class="mb-1">Find Spaces That Suit Your Style</h2>
+                <p>Browse our unique inventory of vacation home rentals</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- owl carousel -->
+        <div class="container-fluid">
+          <div class="theme-carousel p-3">
+            <div class="owl-carousel owl-theme owl-location-listing">
+              <!-- item -->
+              <div class="item">
+                <div class="mb-3">
+                  <div class=" img-hover">
+                    <a href="listing-category.html"><img src="../assets/images/space-img-1.jpg"  alt="Rentkit Directory & Listing Bootstrap 5 Theme"
+                        class="img-fluid rounded mb-4"></a></div>
+                  <h4 class="mb-0"> <a href="listing-category.html" class="text-dark">Condo/Apartment</a></h4>
+                  <p class="small">View 87 Condo/Aprtments </p>
+                </div>
+              </div>
+              <!-- item -->
+              <div class="item">
+                <div class="mb-3">
+                  <div class=" img-hover">
+                    <a href="listing-category.html"><img src="../assets/images/space-img-2.jpg"  alt="Rentkit Directory & Listing Bootstrap 5 Theme"
+                        class="img-fluid rounded mb-4"></a></div>
+                  <h4 class="mb-0"> <a href="listing-category.html" class="text-dark">Lodges </a></h4>
+                  <p class="small">View 12,399 Lodges </p>
+                </div>
+              </div>
+              <!-- item -->
+              <div class="item">
+                <div class="mb-3">
+                  <div class=" img-hover">
+                    <a href="listing-category.html"><img src="../assets/images/space-img-3.jpg"  alt="Rentkit Directory & Listing Bootstrap 5 Theme"
+                        class="img-fluid rounded mb-4"></a></div>
+                  <h4 class="mb-0"> <a href="listing-category.html" class="text-dark">Guest houses</a></h4>
+                  <p class="small">View 87,230 Guest Houses </p>
+                </div>
+              </div>
+              <!-- item -->
+              <div class="item">
+                <div class="mb-3">
+                  <div class=" img-hover">
+                    <a href="listing-category.html"><img src="../assets/images/space-img-4.jpg"  alt="Rentkit Directory & Listing Bootstrap 5 Theme"
+                        class="img-fluid rounded mb-4"></a></div>
+                  <h4 class="mb-0"> <a href="listing-category.html" class="text-dark">Hotels</a></h4>
+                  <p class="small">View 12,000 Hotels </p>
+                </div>
+              </div>
+              <!-- item -->
+              <div class="item">
+                <div class="mb-3">
+                  <div class=" img-hover">
+                    <a href="listing-category.html"><img src="../assets/images/space-img-5.jpg"  alt="Rentkit Directory & Listing Bootstrap 5 Theme"
+                        class="img-fluid rounded mb-4"></a></div>
+                  <h4 class="mb-0"> <a href="listing-category.html" class="text-dark">Resorts</a></h4>
+                  <p class="small">View 8,000 Resorts </p>
+                </div>
+              </div>
+              <!-- item -->
+              <div class="item">
+                <div class="mb-3">
+                  <div class=" img-hover">
+                    <a href="listing-category.html"><img src="../assets/images/space-img-6.jpg"  alt="Rentkit Directory & Listing Bootstrap 5 Theme"
+                        class="img-fluid rounded mb-4"></a></div>
+                  <h4 class="mb-0"> <a href="listing-category.html" class="text-dark">Villas</a></h4>
+                  <p class="small">View 34,000 Villas </p>
+                </div>
+              </div>
+              <!-- item -->
+              <div class="item">
+                <div class="mb-3">
+                  <div class=" img-hover">
+                    <a href="listing-category.html"><img src="../assets/images/space-img-2.jpg"  alt="Rentkit Directory & Listing Bootstrap 5 Theme"
+                        class="img-fluid rounded mb-4"></a></div>
+                  <h4 class="mb-0"> <a href="listing-category.html" class="text-dark">Condo/Apartment</a></h4>
+                  <p class="small">View 87 Condo/Aprtments </p>
+                </div>
+              </div>
+              <!-- item -->
+              <div class="item">
+                <div class="mb-3">
+                  <div class=" img-hover">
+                    <a href="listing-category.html"><img src="../assets/images/space-img-3.jpg"  alt="Rentkit Directory & Listing Bootstrap 5 Theme"
+                        class="img-fluid rounded mb-4"></a></div>
+                  <h4 class="mb-0"> <a href="listing-category.html" class="text-dark">Lodges </a></h4>
+                  <p class="small">View 12,399 Lodges </p>
+                </div>
+              </div>
+              <!-- item -->
+              <div class="item">
+                <div class="mb-3">
+                  <div class=" img-hover">
+                    <a href="listing-category.html"><img src="../assets/images/space-img-4.jpg"  alt="Rentkit Directory & Listing Bootstrap 5 Theme"
+                        class="img-fluid rounded mb-4"></a></div>
+                  <h4 class="mb-0"> <a href="listing-category.html" class="text-dark">Guest houses</a></h4>
+                  <p class="small">View 87,230 Guest Houses </p>
+                </div>
+              </div>
+              <!-- item -->
+              <div class="item">
+                <div class="mb-3">
+                  <div class=" img-hover">
+                    <a href="listing-category.html"><img src="../assets/images/space-img-5.jpg"  alt="Rentkit Directory & Listing Bootstrap 5 Theme"
+                        class="img-fluid rounded mb-4"></a></div>
+                  <h4 class="mb-0"> <a href="listing-category.html" class="text-dark">Hotels</a></h4>
+                  <p class="small">View 12,000 Hotels </p>
+                </div>
+              </div>
+              <!-- item -->
+              <div class="item">
+                <div class="mb-3">
+                  <div class=" img-hover">
+                    <a href="listing-category.html"><img src="../assets/images/space-img-6.jpg"  alt="Rentkit Directory & Listing Bootstrap 5 Theme"
+                        class="img-fluid rounded mb-4"></a></div>
+                  <h4 class="mb-0"> <a href="listing-category.html" class="text-dark">Resorts</a></h4>
+                  <p class="small">View 8,000 Resorts </p>
+                </div>
+              </div>
+              <!-- item -->
+              <div class="item">
+                <div class="mb-3">
+                  <div class=" img-hover">
+                    <a href="listing-category.html"><img src="../assets/images/space-img-4.jpg"  alt="Rentkit Directory & Listing Bootstrap 5 Theme"
+                        class="img-fluid rounded mb-4"></a></div>
+                  <h4 class="mb-0"> <a href="listing-category.html" class="text-dark">Villas</a></h4>
+                  <p class="small">View 34,000 Villas </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- destination -->
+      <div class="pt-lg-11 pb-md-22 pt-7"
+        style="background:linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 102.23%), #f8f9fa;">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+              <!-- section heading -->
+              <div class="mb-8 text-center">
+                <h2 class="mb-0">Top Vacation Rental Destinations </h2>
+                <p>Browse our unique inventory of vacation home rentals.</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+              <!-- location -->
+              <a href="listing-category.html">
+                <div class="overlay-bg img-hover mb-4">
+                  <img src="../assets/images/location-img-6.jpg"  alt="Rentkit Directory & Listing Bootstrap 5 Theme" class="img-fluid rounded-3">
+                  <div class="overlay-content">
+                    <h3 class="text-white mb-0">New York</h3>
+                    <p class="text-white">87 rentals</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+              <!-- location -->
+              <a href="listing-category.html">
+                <div class="overlay-bg img-hover mb-4">
+                  <img src="../assets/images/location-img-7.jpg"  alt="Rentkit Directory & Listing Bootstrap 5 Theme" class="img-fluid rounded-3">
+                  <div class="overlay-content">
+                    <h3 class="text-white mb-0">Paris</h3>
+                    <p class="text-white">221 rentals</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+              <!-- location -->
+              <a href="listing-category.html">
+                <div class="overlay-bg img-hover mb-4">
+                  <img src="../assets/images/location-img-8.jpg"  alt="Rentkit Directory & Listing Bootstrap 5 Theme" class="img-fluid rounded-3">
+                  <div class="overlay-content">
+                    <h3 class="text-white mb-0">Sydney</h3>
+                    <p class="text-white">68 rentals</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+              <!-- location -->
+              <a href="listing-category.html">
+                <div class="mb-2 overlay-bg img-hover mb-4">
+                  <img src="../assets/images/location-img-9.jpg"  alt="Rentkit Directory & Listing Bootstrap 5 Theme" class="img-fluid rounded-3">
+                  <div class="overlay-content">
+                    <h3 class="text-white mb-0">Tokyo</h3>
+                    <p class="text-white">54 rentals</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+              <!-- location -->
+              <a href="listing-category.html">
+                <div class="overlay-bg img-hover mb-4">
+                  <img src="../assets/images/location-img-10.jpg"  alt="Rentkit Directory & Listing Bootstrap 5 Theme" class="img-fluid rounded-3">
+                  <div class="overlay-content">
+                    <h3 class="text-white mb-0">Chicago</h3>
+                    <p class="text-white">143 rentals</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+              <!-- location -->
+              <a href="listing-category.html">
+                <div class="overlay-bg img-hover mb-4">
+                  <img src="../assets/images/location-img-11.jpg"  alt="Rentkit Directory & Listing Bootstrap 5 Theme" class="img-fluid rounded-3">
+                  <div class="overlay-content">
+                    <h3 class="text-white mb-0">San Diego</h3>
+                    <p class="text-white">63 rentals</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <hr class="my-10">
+          <div class="row">
+            <div class="col-md-12 col-12 ">
+              <!-- section heading -->
+              <div class="mb-8">
+                <h2 class="mb-0">Why Rentkit.</h2>
+                <p>Donec auctor hendrerit maui finsellus bibendum etexatempus. </p>
+              </div>
+            </div>
+          </div>
+          <div class="row mb-20">
+            <!-- features -->
+            <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0 ">
+              <span class="icon-shape bg-primary icon-md text-white mb-4 rounded-circle">1</span>
+              <h4>It's free</h4>
+              <p>Aenean lobortis iaculis luctusivamus sed posuere lore onsequat sit amet augucenas commodoet.</p>
+            </div>
+            <!-- features -->
+            <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0 ">
+              <span class="icon-shape bg-primary icon-md text-white mb-4 rounded-circle">2</span>
+              <h4>Easy to use</h4>
+              <p>Nullam id neque at ligula tincidun ones efficitur uisque velnisl pelle simple dummy content.</p>
+            </div>
+            <!-- features -->
+            <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0 ">
+              <span class="icon-shape bg-primary icon-md text-white mb-4 rounded-circle">3</span>
+              <h4>Best venues in town</h4>
+              <p>Proin aliquam eturna vitae portti torese cras utqu sodales lsimple oipsum simitomlectus.</p>
+            </div>
+            <!-- features -->
+            <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0 ">
+              <span class="icon-shape bg-primary icon-md text-white mb-4 rounded-circle">4</span>
+              <h4>Customer service</h4>
+              <p>Quisque vitae metus lacinia, placerat neque et. Cras tincidunt est eget vulputate porttitor.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container mt-n23">
+        <div class="row">
+          <!-- section heading -->
+          <div class="col-md-12 col-sm-12 col-12">
+            <div class="mb-6">
+              <h2 class="mb-1">Our Customer Reviews </h2>
+              <p>Happy guest stay longer! At Rentkit we care about matching quality.
+              </p>
+            </div>
+          </div>
+          <!-- section heading -->
+        </div>
+        <div class="row ">
+          <div class="col-lg-4 col-md-6 col-12">
+            <!-- testimonial -->
+            <div class="card mb-4 mb-md-0">
+              <div class="card-body p-5">
+                <h3 class="h4 mb-2">It was absolutely lovely</h3>
+                <p class="mb-4 ">Nam risus dui consequatet magna vitae blandit hendrerit risustesque ante varius
+                  iaculis feugiat nulla metustiam auctor malesuada.</p>
+                <div class="d-flex justify-content-between">
+                  <div class="text-primary align-self-center text-sm">
+                    <span class="mdi mdi-star"></span>
+                    <span class="mdi mdi-star"></span>
+                    <span class="mdi mdi-star"></span>
+                    <span class="mdi mdi-star"></span>
+                    <span class="mdi mdi-star-half"></span>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <img src="../assets/images/avatar-1.jpg"  alt="Rentkit Directory & Listing Bootstrap 5 Theme" class="avatar-xs rounded-circle me-2">
+                    <span class="text-sm  font-weight-semi-bold">James Duncan</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- testimonial -->
+          </div>
+          <div class="col-lg-4 col-md-6 col-12">
+            <!-- testimonial -->
+            <div class="card mb-4 mb-md-0">
+              <div class="card-body p-5">
+                <h3 class="h4 mb-2">Had an amazing time</h3>
+                <p class="mb-4 ">Sollicitudin purus ante id fermentum libero luctusivamus vel imperdiet eniroin
+                  sit ametonec dictum mollis dolor porttitort convvariun.</p>
+                <div class="d-flex justify-content-between">
+                  <div class="text-primary align-self-center text-sm">
+                    <span class="mdi mdi-star"></span>
+                    <span class="mdi mdi-star"></span>
+                    <span class="mdi mdi-star"></span>
+                    <span class="mdi mdi-star"></span>
+                    <span class="mdi mdi-star-half"></span>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <img src="../assets/images/avatar-3.jpg"  alt="Rentkit Directory & Listing Bootstrap 5 Theme" class="avatar-xs rounded-circle me-2">
+                    <span class="text-sm  font-weight-semi-bold">Richard Jason</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- testimonial -->
+          </div>
+          <div class="col-lg-4 col-md-6 col-12 d-md-none d-lg-block">
+            <!-- testimonial -->
+            <div class="card mb-4 mb-md-0">
+              <div class="card-body p-5">
+                <h3 class="h4 mb-2">It was absolutely lovely</h3>
+                <p class="mb-4 ">Nam risus dui consequatet risustesque ante varius iaculis nibh ieuismod leouce
+                  feugiat nulla metustiam auctor malesuada.</p>
+                <div class="d-flex justify-content-between">
+                  <div class="text-primary align-self-center text-sm">
+                    <span class="mdi mdi-star"></span>
+                    <span class="mdi mdi-star"></span>
+                    <span class="mdi mdi-star"></span>
+                    <span class="mdi mdi-star"></span>
+                    <span class="mdi mdi-star-half"></span>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <img src="../assets/images/avatar-1.jpg"  alt="Rentkit Directory & Listing Bootstrap 5 Theme" class="w-100 avatar-xs rounded-circle me-2">
+                    <span class="text-sm  font-weight-semi-bold">James Duncan</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- testimonial -->
+          </div>
+        </div>
+      </div>
+      <div class="pt-lg-14 pb-lg-11 py-7 ">
+        <div class="container">
+          <div class="row">
+            <!-- section heading -->
+            <div class="col-md-12 col-sm-12 col-12">
+              <div class="mb-6">
+                <h2 class="mb-1">Explore Latest Posts </h2>
+                <p>We want to make sure that you get to explore as much.
+                </p>
+              </div>
+            </div>
+            <!-- section heading -->
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-12">
+              <div class="mb-6 mb-md-0">
+                <!-- post classic block -->
+
+                  <a href="blog-single.html"><img src="../assets/images/listing-img-1.jpg"  alt="Rentkit Directory & Listing Bootstrap 5 Theme"
+                      class="w-100 rounded-3 img-hover"></a>
+
+                <div class="mt-4">
+                  <div class="text-sm mb-1 ">
+                    <span class="me-2 font-weight-semi-bold">Oct 17, 2021</span>
+                    <span class="font-weight-semi-bold"><a href="#">Experiance</a> </span>
+                  </div>
+                  <h4 class="mb-0"><a href="blog-single.html" class="text-inherit">Aenean laoreet neque bibendum
+                      mi ullamcorper accumsan. </a>
+                  </h4>
+                  <!-- postmeta -->
+                </div>
+              </div>
+            </div>
+            <!-- /.post classic block -->
+            <div class="col-lg-4 col-md-6 col-12">
+              <div class="mb-6 mb-md-0">
+                <!-- post classic block -->
+
+                  <a href="blog-single.html"><img src="../assets/images/listing-img-2.jpg"  alt="Rentkit Directory & Listing Bootstrap 5 Theme"
+                      class="w-100 rounded-3 img-hover"></a>
+
+                <div class="mt-4">
+                  <div class="text-sm mb-1 ">
+                    <span class="me-2 font-weight-semi-bold">Oct 16, 2021</span>
+                    <span class="font-weight-semi-bold"><a href="#">Homes</a></span>
+                  </div>
+                  <h4 class="mb-0"><a href="blog-single.html" class="text-inherit">Nunc eu quam et massa tempus
+                      vehicula.</a></h4>
+                </div>
+              </div>
+            </div>
+            <!-- /.post classic block -->
+            <div class="col-lg-4 col-md-6 col-12 d-md-none d-lg-block">
+              <div class="mb-6 mb-md-0">
+                <!-- post classic block -->
+
+                  <a href="blog-single.html"><img src="../assets/images/listing-img-3.jpg"  alt="Rentkit Directory & Listing Bootstrap 5 Theme"
+                      class="w-100 rounded-3 img-hover"></a>
+
+                <div class="mt-4">
+                  <div class="text-sm mb-1 ">
+                    <span class="me-2 font-weight-semi-bold">Oct 15, 2021</span>
+                    <span class="font-weight-semi-bold"><a href="#">Company</a></span>
+                  </div>
+                  <h4 class="mb-0"><a href="blog-single.html" class="text-inherit"> Lorem ipsum dolor sit amet
+                      simon consectetur adipisicing elit.</a></h4>
+                </div>
+              </div>
+            </div>
+            <!-- /.post classic block -->
+          </div>
+        </div>
+      </div>
+      <div class="py-lg-11 pb-7">
+        <div class="container">
+          <div class="row">
+            <!-- section heading -->
+            <div class="col-md-12 col-sm-12 col-12">
+              <div class="mb-6">
+                <h2 class="mb-1">Pricing plans </h2>
+                <p>Morbi egestas vitae urna eget congue. In hac habitasse platea dictumst
+                </p>
+              </div>
+            </div>
+            <!-- section heading -->
+            <div class="row d-flex align-items-end">
+              <div class="col-lg-4 col-md-12 col-12">
+                <!-- pricing -->
+                <div class="card mb-4 shadow border-0">
+                  <div class="card-body p-6">
+                    <div class="mb-4">
+                      <h4 class="fw-bold mb-4">Free</h4>
+                      <p class="display-3 fw-bold mb-0 text-dark">$0</p>
+                    </div>
+                    <p class="mb-4">Give it a try, submit up to two listings for limited availability</p>
+                    <ul class="list-unstyled mb-5">
+                      <li class="text-dark mb-2 d-flex align-items-center"><span
+                          class="mdi mdi-check-circle me-2 fs-5 text-primary"></span>2 listing submissions</li>
+                      <li class="text-dark mb-2 d-flex align-items-center"><span
+                          class="mdi mdi-check-circle me-2 fs-5 text-primary"></span>20 days availability</li>
+                      <li class="text-dark mb-2 d-flex align-items-center"><span
+                          class="mdi mdi-check-circle me-2 fs-5 text-primary"></span>Limited support</li>
+                    </ul>
+                    <div class="d-grid">
+                      <a href="signup.html" class="btn btn-outline-primary">Select Your Plan</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- pricing-->
+              </div>
+              <div class="col-lg-4 col-md-12 col-12">
+                <!-- pricing -->
+                <div class="card mb-4 shadow border-0 bg-dark">
+                  <div class="text-center mt-n3">
+                    <span class="badge bg-warning text-dark">Popular</span>
+                  </div>
+                  <div class="card-body p-6 text-white">
+                    <div class="mb-4">
+                      <h4 class="fw-bold mb-4 text-white">Basic</h4>
+                      <p class="display-3 fw-bold mb-0">$29</p>
+                    </div>
+                    <p class="mb-4">Most popular plan, submit up to 10 listings and get more visibility</p>
+                    <ul class="list-unstyled mb-5">
+                      <li class="text-dark mb-2 d-flex align-items-center text-white"><span
+                          class="mdi mdi-check-circle me-2 fs-5 text-primary"></span>Limit: 10 listing</li>
+                      <li class="text-dark mb-2 d-flex align-items-center text-white"><span
+                          class="mdi mdi-check-circle me-2 fs-5 text-primary"></span>Available for 90 days</li>
+                      <li class="text-dark mb-2 d-flex align-items-center text-white"><span
+                          class="mdi mdi-check-circle me-2 fs-5 text-primary"></span>Dedicated support</li>
+                    </ul>
+                    <div class="d-grid">
+                      <a href="signup.html" class="btn btn-primary">Select Your Plan</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- pricing-->
+              </div>
+              <div class="col-lg-4 col-md-12 col-12">
+                <!-- pricing -->
+                <div class="card mb-4 shadow border-0">
+                  <div class="card-body p-6">
+                    <div class="mb-4">
+                      <h4 class="fw-bold mb-4">Standard</h4>
+                      <p class="display-3 fw-bold mb-0 text-dark">$49</p>
+                    </div>
+                    <p class="mb-4">Our most powerful plan. Unlimited submissions and dedicated support</p>
+                    <ul class="list-unstyled mb-5">
+                      <li class="text-dark mb-2 d-flex align-items-center"><span
+                          class="mdi mdi-check-circle me-2 fs-5 text-primary"></span>Unlimited submissions</li>
+                      <li class="text-dark mb-2 d-flex align-items-center"><span
+                          class="mdi mdi-check-circle me-2 fs-5 text-primary"></span>Unlimited availability</li>
+                      <li class="text-dark mb-2 d-flex align-items-center"><span
+                          class="mdi mdi-check-circle me-2 fs-5 text-primary"></span>Dedicated support</li>
+                    </ul>
+                    <div class="d-grid">
+                      <a href="signup.html" class="btn btn-outline-primary">Select Your Plan</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- pricing-->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- cta  -->
+      <div class="py-xl-17 py-7 " style="background:url(../assets/images/call-action-img.jpg)no-repeat">
+        <div class="container">
+          <div class="row d-flex justify-content-center text-center">
+            <div class="col-xl-6 col-lg-7 col-md-12 col-sm-12 col-12">
+              <h2 class="text-white mb-2 display-5">Want To Become Host?</h2>
+              <p class="text-white mb-6 lead">Fusce ut varius estfacilisis tellusecenas ornare suscipit justsed
+                dapibus
+                ante.
+              </p>
+              <a href="add-listing.html" class="btn btn-white ">List your space</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- footer  -->
+      @@include("../partials/footer.html",{
+        "classList" : "bg-dark ",
+        "text" : "text-white"
+
+      })
+    </div>
+  </div>
+   <!-- scripts  -->
+  @@include("../partials/scripts.html")
+
+</body>
+</html>

@@ -1,36 +1,165 @@
-<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-  <div class="container-fluid">
-    <%= link_to "#", class: "navbar-brand" do %>
-      <%= image_tag asset_path('favicon.png') %>
-    <% end %>
+<!-- navbar -->
+<div class="nav-header nav-header-classic @@classList">
+    <div class="@@container">
+        <div class="row">
+            <div class="col-md-12">
+                <nav class="navbar navbar-expand-lg">
+                    <a class="navbar-brand" href="#"> <img src=<%= image_path("favicon.png") %> alt="Yerba mate reviews"></a>
+                    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto ms-lg-3">
+                            <li class="nav-item dropdown ">
+                                <a class="nav-link dropdown-toggle" href="#" id="homeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Home
+                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="@@webRoot/index.html">Classic</a></li>
+                                    <li><a class="dropdown-item" href="@@webRoot/pages/modern.html">Modern</a></li>
+                                    <li><a class="dropdown-item" href="@@webRoot/pages/hotel-finder.html">Hotel</a></li>
+                                    <li><a class="dropdown-item" href="@@webRoot/pages/real-estate.html">Real Estate <span class="badge bg-primary">New</span></a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown menu_list">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarExplore" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Explore
+                </a>
+                                <div class="dropdown-menu w-100 p-0" aria-labelledby="navbarExplore">
+                                    <div class="row g-0">
+                                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 d-xl-block d-lg-block d-md-none d-none">
+                                            <div class="dropdown-img " style="background-image: url(@@webRoot/assets/images/dropdown-img.jpg);">
+                                                <div class="dropdown-img-caption">
+                                                    <h2 class="text-white mb-1">Want Experience on Rentkit ?</h2>
+                                                    <p class="mb-4">Experience a level of our quality in both design &amp; customization works.
+                                                    </p>
+                                                    <a href="@@webRoot/pages/add-listing.html" class="btn btn-primary">
+                            List Your Space
+                          </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-12 col-lg-6">
+                                            <div class="row m-3 m-lg-6">
+                                                <div class="col-md-3">
+                                                    <h5 class="mb-2 text-uppercase h6 text-primary fw-bold">Listing</h5>
+                                                    <ul class="list-unstyled">
+                                                        <li><a class="dropdown-item" href="@@webRoot/pages/listing-list-view.html">
+                                Listing View</a>
+                                                        </li>
+                                                        <li><a class="dropdown-item" href="@@webRoot/pages/listing-grid-view.html">
+                                Grid View</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item" href="@@webRoot/pages/list-with-map.html">
+                                List With Map</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item" href="@@webRoot/pages/grid-with-map.html">
+                                Grid With Map</a>
+                                                        </li>
+                                                        <li><a class="dropdown-item" href="@@webRoot/pages/listing-category.html">
+                                Listing Category</a>
+                                                        </li>
+                                                        <li><a class="dropdown-item" href="@@webRoot/pages/list-single.html">
+                                Listing Single</a>
+                                                        </li>
+                                                        <li><a class="dropdown-item" href="@@webRoot/pages/add-listing.html">
+                                Add Listing</a>
+                                                        </li>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+                                                    </ul>
+                                                </div>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto">
-        <% if user_signed_in? %>
-          <li class="nav-item active">
-            <%= link_to "Home", "#", class: "nav-link" %>
-          </li>
-          <li class="nav-item">
-            <%= link_to "Messages", "#", class: "nav-link" %>
-          </li>
-          <li class="nav-item dropdown">
-            <%= image_tag "https://kitt.lewagon.com/placeholder/users/ssaunier", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
-            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-              <%= link_to "Action", "#", class: "dropdown-item" %>
-              <%= link_to "Another action", "#", class: "dropdown-item" %>
-              <%= link_to "Log out", destroy_user_session_path, data: {turbo_method: :delete}, class: "dropdown-item" %>
+                                                <div class="col-md-3">
+                                                    <h5 class="mb-2 text-uppercase h6 text-primary fw-bold">Other Pages</h5>
+                                                    <ul class="mega-menu-list list-unstyled">
+                                                        <li><a class="dropdown-item" href="@@webRoot/pages/about.html">
+                              About us</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item" href="@@webRoot/pages/contact-us.html">
+                              Contact</a>
+                                                        </li>
+
+                                                        <li><a class="dropdown-item" href="@@webRoot/pages/faq.html">
+                                Faq</a>
+                                                        </li>
+                                                        <li><a class="dropdown-item" href="@@webRoot/pages/pricing.html">
+                                Pricing</a>
+                                                        </li>
+                                                        <li><a class="dropdown-item" href="@@webRoot/pages/checkout-page.html">
+                              Checkout</a>
+                                                        </li>
+
+                                                        <li><a class="dropdown-item" href="@@webRoot/pages/coming-soon.html">
+                              Coming Soon</a>
+                                                        </li>
+                                                        <li><a class="dropdown-item" href="@@webRoot/pages/404-error.html">
+                                404 Error</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <h5 class="mb-2 text-uppercase h6 text-primary fw-bold">Author</h5>
+                                                    <ul class="list-unstyled">
+                                                        <li><a class="dropdown-item" href="@@webRoot/pages/author-list.html">
+                                List</a>
+                                                        </li>
+                                                        <li><a class="dropdown-item" href="@@webRoot/pages/author-reviews.html">
+                                Reviews</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item" href="@@webRoot/pages/author-favourite.html">
+                                Favourite</a>
+                                                        </li>
+
+                                                    </ul>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <h5 class="mb-2 text-uppercase h6 text-primary fw-bold">Account</h5>
+                                                    <ul class="mega-menu-list list-unstyled">
+                                                        <li><a class="dropdown-item" href="@@webRoot/pages/signin.html">
+                                Login</a>
+                                                        </li>
+                                                        <li><a class="dropdown-item" href="@@webRoot/pages/signup.html">
+                                Register</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item" href="@@webRoot/pages/forget-password.html">
+                                Forgot Password</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown ">
+                                <a class="nav-link dropdown-toggle" href="#" id="blogDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Blog
+                </a>
+                                <ul class="dropdown-menu" aria-labelledby="blogDropdown">
+                                    <li><a href="@@webRoot/pages/blog.html" class="dropdown-item">Blog</a></li>
+                                    <li><a href="@@webRoot/pages/blog-author.html" class="dropdown-item">Author</a></li>
+                                    <li><a href="@@webRoot/pages/blog-category.html" class="dropdown-item">Category</a></li>
+                                    <li><a href="@@webRoot/pages/blog-single.html" class="dropdown-item">Single</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="@@webRoot/pages/dashboard/overview.html">Dashboard</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="@@webRoot/docs/index.html">Docs</a>
+                            </li>
+                        </ul>
+                        <a href="@@webRoot/pages/add-listing.html" class="btn btn-primary d-none d-lg-block">List Your Space</a>
+                    </div>
+                </nav>
             </div>
-          </li>
-        <% else %>
-          <li class="nav-item">
-            <%= link_to "Login", new_user_session_path, class: "nav-link" %>
-          </li>
-        <% end %>
-      </ul>
+        </div>
     </div>
-  </div>
 </div>

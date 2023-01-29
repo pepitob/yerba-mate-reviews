@@ -1,0 +1,41 @@
+// noui target
+
+.noUi-target {
+  background-color: $gray-100;
+  border-radius: 0.5rem;
+}
+
+.noUi-horizontal {
+  height: 8px;
+}
+
+.noUi-handle {
+  border: transparent;
+  border-radius: 100%;
+  background: $primary;
+  cursor: default;
+  box-shadow: none;
+}
+.noUi-handle:focus {
+  outline: none;
+}
+
+.noUi-horizontal .noUi-handle {
+  width: 15px;
+  height: 15px;
+  right: -14px;
+  top: -5px;
+}
+.noUi-handle:after,
+.noUi-handle:before {
+  display: none;
+}
+
+.noUi-connect {
+  background: $primary;
+}
+.noUi-tooltip {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+}
