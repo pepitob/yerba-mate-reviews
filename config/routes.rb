@@ -5,5 +5,5 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
-  get '/blog' => redirect("https://bestyerbamate.co/blog/")
+  get '/blog' => redirect("https://bestyerbamate.co/blog/", status: 301)
 end
