@@ -186,6 +186,8 @@ GEM
       nokogiri (>= 1.6)
     rails-html-sanitizer (1.4.4)
       loofah (~> 2.19, >= 2.19.1)
+    rails_material_design_icons (6.5.95)
+      railties (>= 3.2, < 8)
     railties (7.0.4.1)
       actionpack (= 7.0.4.1)
       activesupport (= 7.0.4.1)
@@ -269,6 +271,7 @@ DEPENDENCIES
   puma (~> 5.0)
   rack-reverse-proxy
   rails (~> 7.0.4)
+  rails_material_design_icons
   sassc-rails
   selenium-webdriver
   simple_form!
