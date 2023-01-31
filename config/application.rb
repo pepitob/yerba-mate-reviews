@@ -23,6 +23,7 @@ module YerbaMateReviews
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+
     config.middleware.insert(0, Rack::ReverseProxy) do
       reverse_proxy_options preserve_host: true
       reverse_proxy /^\/blog(\/.*)$/, 'http://blog.bestyerbamate.co$1', :username => 'hippob', :password => ENV['WP_AUTHENTICATION'],:timeout => 500
