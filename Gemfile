@@ -80,3 +80,4 @@ end
 gem 'rack-reverse-proxy', :require => 'rack/reverse_proxy'
 gem 'google-tag-manager-rails'
 gem "rails_material_design_icons"
+gem "cloudinary"
