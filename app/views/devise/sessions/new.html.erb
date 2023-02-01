@@ -1,20 +1,41 @@
-<h2>Log in</h2>
+<!-- content -->
+<div class="min-vh-100 py-md-10 py-lg-0" style="background: url(<%= asset_path 'banner.jpg' %>) no-repeat center center fixed; -webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;">
+    <div class="container">
+        <div class="row d-flex align-items-center min-vh-100 justify-content-end">
+            <div class="col-xl-5 col-lg-6 col-md-12 col-sm-12 col-12">
+                <!-- card -->
+                <div class="card shadow border-0">
+                    <!-- card body -->
+                    <div class="card-body p-8">
+                        <h3 class="mb-4">Log in</h3>
+                        <!-- form -->
+                          <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name), data: { turbo: :false }) do |f| %>
+                            <div class="form-inputs">
+                              <%= f.input :email,
+                                          required: false,
+                                          autofocus: true,
+                                          input_html: { autocomplete: "email", class: "mb-3 form-label", placeholder: "Enter email" } %>
+                              <%= f.input :password,
+                                          required: false,
+                                          input_html: { autocomplete: "current-password", class: "mb-3 form-label", placeholder: "**********" } %>
+                              <% if devise_mapping.rememberable? %>
+                                <%= f.input :remember_me, as: :boolean, input_html: { class: "form-check-input" } %>
+                              <% end %>
+                            </div>
 
-<%= simple_form_for(resource, as: resource_name, url: session_path(resource_name), data: { turbo: :false }) do |f| %>
-  <div class="form-inputs">
-    <%= f.input :email,
-                required: false,
-                autofocus: true,
-                input_html: { autocomplete: "email" } %>
-    <%= f.input :password,
-                required: false,
-                input_html: { autocomplete: "current-password" } %>
-    <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
-  </div>
-
-  <div class="form-actions">
-    <%= f.button :submit, "Log in" %>
-  </div>
-<% end %>
-
-<%= render "devise/shared/links" %>
+                            <div class="form-actions">
+                              <%= f.button :submit, "Log in", class: "btn btn-primary btn-block" %>
+                            </div>
+                          <% end %>
+                          <div class="mt-4">
+                            <%= render "devise/shared/links" %>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
