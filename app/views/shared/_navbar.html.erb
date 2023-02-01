@@ -121,15 +121,18 @@
                                                 <div class="col-md-3">
                                                     <h5 class="mb-2 text-uppercase h6 text-primary fw-bold">Account</h5>
                                                     <ul class="mega-menu-list list-unstyled">
-                                                        <li><a class="dropdown-item" href="@@webRoot/pages/signin.html">
+                                                        <li><a class="dropdown-item" href="/users/sign_in">
                                 Login</a>
                                                         </li>
-                                                        <li><a class="dropdown-item" href="@@webRoot/pages/signup.html">
+                                                        <li><a class="dropdown-item" href="/users/sign_up">
                                 Register</a>
                                                         </li>
                                                         <li>
-                                                            <a class="dropdown-item" href="@@webRoot/pages/forget-password.html">
+                                                            <a class="dropdown-item" href="/users/password/new">
                                 Forgot Password</a>
+                                                        </li>
+                                                        <li>
+                                                          <%= link_to 'Sign Out', destroy_user_session_path, data: { turbo_method: :delete }, class: "dropdown-item" %>
                                                         </li>
                                                     </ul>
                                                 </div>
