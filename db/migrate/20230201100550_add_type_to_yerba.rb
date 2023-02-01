@@ -1,5 +1,5 @@
-class AddTypeToYerba < ActiveRecord::Migration[7.0]
+class AddCategoryToYerba < ActiveRecord::Migration[7.0]
   def change
-    add_column :yerbas, :type, :string
+    add_column :yerbas, :category, :string
   end
 end

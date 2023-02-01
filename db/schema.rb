@@ -61,7 +61,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_02_01_112811) do
     t.float "overall_rating"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "type"
+    t.string "category"
     t.string "description"
   end
 
