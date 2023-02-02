@@ -16,6 +16,6 @@ class YerbasController < ApplicationController
   private
 
   def yerba_params
-    params.require(:yerba).permit(:name, :brand, :country, :category, :description)
+    params.require(:yerba).permit(:name, :brand, :country, :category, :description, :photo)
   end
 end
