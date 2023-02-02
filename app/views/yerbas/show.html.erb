@@ -2,7 +2,7 @@
 <div class="main-wrapper">
     <!-- listing slide -->
     <div class="container mt-5">
-        <div class="py-22 position-relative rounded-3" style="background: url(../assets/images/post-single-img.jpg)no-repeat center center; ">
+        <div class="py-22 position-relative rounded-3" style="background: url('<%= cl_image_path @yerba.photo.key, height: 300, crop: :fill %>') no-repeat center center; ">
             <div class="row">
                 <div class="col-xl-12 col-lg-12 col-md-12 col-12">
                     <!-- listing badges -->
@@ -23,9 +23,10 @@
                     <div class="card mb-4">
                         <!-- listing detail head -->
                         <div class="card-body p-4">
-                            <h2 class="mb-2">Modern & flexible home for one day outing </h2>
-                            <p class="mb-4 fs-6">Ahmedabad, Gujarat,India</p>
+                            <h1 class="mb-2"><%= @yerba.name %></h1>
+                            <h2 class="mb-4 fs-4"><%= @yerba.brand %></h2>
                             <div class="text-sm">
+                              <span class="me-2"><span class="ms-2"><%= @yerba.country %></span></span>
                                 <span class="me-2"><i class="mdi mdi-account text-primary"></i><span class="ms-2">4
                   Guest</span></span>
                                 <span class="me-2"><i class="mdi mdi-home text-primary"></i><span class="ms-2">3
@@ -42,10 +43,7 @@
                     <div class="card mb-4">
                         <div class="card-body p-4">
                             <h4>Overview</h4>
-                            <p>Convallis nulla felis id lacus. Nam lectus duiultricies ac augue ultrices mattis pellentesque one neqpulvinar quam turpissit amet suscipit turpis elementum in.auris laoreet porttitor lacus non rhoncusulla congue augue at
-                                sagittis volutpat, arcu ipsum prpurus.Praesent dictum, arcu eu convallis accumsan, neque turpis convallis elit, nec lacinia neque tortor id mauris. </p>
-                            <p class="mb-0">Phasellus eu leo rhoncus, cursus erat id, volutpat nisl. Proin sed laoreet felis. Aenean sollicitudin dictum augue, non scelerisque nulla cursus vitae. Mauris molestie, tellus sed vehicula ultricies, ex arcu semper nibh,
-                                eu malesuada turpis metus a orci. Pellentesque consequat, tortor sit amet hendrerit ornare, mi erat ultricies eros, placerat auctor lacus erat a tortorefficitur non. Maecenas a molestie lorem. </p>
+                            <p><%= @yerba.description  %></p>
                         </div>
                     </div>
                     <!-- listing detail -->
@@ -282,46 +280,6 @@
                     </div>
                     <!-- listing detail -->
                     <!-- listing detail -->
-                    <div class="card mb-4">
-                        <div class="card-body p-4">
-                            <h4 class="mb-3">Video</h4>
-                            <div class="d-flex justify-content-center position-relative rounded py-16 border-white border rounded-lg " style="background-image: url(../assets/images/featured-img.jpg);">
-                                <a class="popup-youtube icon-shape rounded-circle icon-xl text-decoration-none bg-white fs-3" href="https://www.youtube.com/watch?v=nb9gtT-BqRc">
-                                    <i class="mdi mdi-play"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- listing detail -->
-                    <!-- listing detail -->
-                    <div class="card mb-4">
-                        <div class="card-body p-4">
-                            <h4 class="mb-1">Location</h4>
-                            <p>Juana Henery’s place is located in Ahemedabad, Gujarat, India</p>
-                            <div id="detailMap" class="listing-map"></div>
-                        </div>
-                    </div>
-                    <!-- listing detail -->
-                    <!-- listing detail -->
-                    <div class="card mb-4 " id="faq">
-                        <div class="card-body p-4">
-                            <h4 class="mb-2">Frequently Ask Question</h4>
-                            <p>Juana Henery’s place is located in Ahemedabad, Gujarat, India</p>
-                            <div class="mb-3">
-                                <h5 class="mb-1">Q. How manyhasellus velfelism pcommodo lacus?</h5>
-                                <p>Suspendisse et risus non metus tincidunt aliquam. Aliquam ornare pellentesque eros necesdere fermentum. Aenean sit amet tellus nec ante dapibus congue at eget leo. </p>
-                            </div>
-                            <div class="mb-3">
-                                <h5 class="mb-1">Q. Is there ferum efficitur feliendulla viverante sit ame?</h5>
-                                <p>Phasellus vel felis fringilla pretium purus ucommodo lacuhasellus laoreet imperdiet arcuatesd posuere. Nunc posuere semper velit posuere sodales fringilla pretium. </p>
-                            </div>
-                            <div class="mb-0">
-                                <h5 class="mb-1">Q. Why estibulum tristiqueorcid lobortis tincidun?</h5>
-                                <p>Aliquam efficitur dolor interdum porttitor ultricieaecenas pretium volutpat commodtid dictum ipsumliquam scelerisque fermentum elitvel volutpat quam.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- listing detail -->
                 </div>
                 <div class="col-xl-4 col-lg-4 col-md-12 col-12 ">
                     <!-- listing detail -->
@@ -330,30 +288,12 @@
                         <div class="card mb-4 ">
                             <div class="card-body p-4">
                                 <div class="d-flex align-items-center mb-3">
-                                    <h3 class="fw-bold">$120</h3><small class="text-muted ms-2">/ night</small>
+                                    <h3 class="fw-bold">$120</h3><small class="text-muted ms-2">/ kg</small>
                                 </div>
                                 <div>
                                     <form>
-                                        <div class="mb-3">
-                                            <label class="form-label">Your Stay</label>
-                                            <div class="input-group mb-3">
-                                                <input type="text" class="form-control" id="dateSelect" placeholder="Select Date" aria-label="Recipient's username">
-                                                <span class="input-group-text bg-transparent"><i
-                          class="mdi mdi-calendar-month-outline"></i></span>
-                                            </div>
-                                        </div>
-                                        <!-- select -->
-                                        <select class="select2">
-                    <option>Guest</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                  </select>
                                         <div class="mt-3 d-grid">
-                                            <button class="btn btn-primary " type="button">Check
-                      Availability</button>
+                                            <button class="btn btn-primary " type="button">Buy</button>
                                         </div>
                                     </form>
                                 </div>
@@ -395,7 +335,7 @@
                 <!-- section heading  -->
                 <div class=" col-md-12 col-12">
                     <div class="mb-8 text-center">
-                        <h2 class="mb-0">Similar Places to Stay</h2>
+                        <h2 class="mb-0">Similar Yerbas</h2>
                     </div>
                 </div>
                 <!-- section heading  -->
