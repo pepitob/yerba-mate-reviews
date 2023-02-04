@@ -46,6 +46,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_02_03_145806) do
     t.string "name"
     t.text "description"
     t.string "country"
+    t.string "logo_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -69,7 +70,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_02_03_145806) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "category"
-    t.string "description"
+    t.text "description"
     t.bigint "brand_id"
     t.index ["brand_id"], name: "index_yerbas_on_brand_id"
   end
