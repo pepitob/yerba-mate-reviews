@@ -24,7 +24,7 @@
                         <!-- listing detail head -->
                         <div class="card-body p-4">
                             <h1 class="mb-2"><%= @yerba.name %></h1>
-                            <h2 class="mb-4 fs-4"><%= @yerba.brand %></h2>
+                            <h2 class="mb-4 fs-4"><%= @yerba.brand.name %></h2>
                             <div class="text-sm">
                               <span class="me-2"><span class="ms-2"><%= @yerba.country %></span></span>
                                 <span class="me-2"><i class="mdi mdi-account text-primary"></i><span class="ms-2">4
@@ -303,19 +303,21 @@
                         <!-- listing widget -->
                         <div class="card mb-4">
                             <div class="card-body p-4">
-                                <h5 class="mb-0">Hosted by <span class="mdi mdi-medal text-primary float-right"></span></h5>
+                                <h5 class="mb-0">Brand <span class="mdi mdi-medal text-primary float-right"></span></h5>
                                 <div class="text-center mt-4">
-                                    <img src="../assets/images/avatar-3.jpg " alt="Rentkit Directory & Listing Bootstrap 5 Theme" class="rounded-circle avatar avatar-lg mb-2">
-                                    <h5 class="mb-0">Juana Henry</h5>
-                                    <small>joined in january 2017</small>
-                                    <p class="mb-0 mx-5 mt-3">Duis varius finibus felis, a tincidunt sedmauris varius eudeunc aliquet ipsum odio id luctus quam dapibus sem.</p>
+                                    <img src="<%= @yerba.brand.logo_url %>" alt="<%= @yerba.brand.name %> logo" class="rounded-circle avatar avatar-lg mb-2" style="width: 100%; object-fit: cover;">
+                                    <h5 class="mb-0"><%= @yerba.brand.name %></h5>
+                                    <small><%= @yerba.brand.country %></small>
+                                    <p class="mb-0 mx-5 mt-3" style="overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 5; -webkit-box-orient: vertical; max-height: 8em;">
+                                      <%= @yerba.brand.description %>
+                                    </p>
                                 </div>
                             </div>
                             <div class="border-top card-body p-4 text-center">
-                                <p class="mb-0">Response rate: <span class="text-primary">100%</span></p>
-                                <p>Response time: <span class="text-primary">within an hour</span></p>
+                                <p class="mb-0">Average rating: <span class="text-primary">98%</span></p>
+                                <p>Number of yerbas: <span class="text-primary"><%= Yerba.where(brand: @yerba.brand).count %></span></p>
                                 <div class="d-grid mx-8">
-                                    <a href="#" class="btn btn-dark">Contact Host</a>
+                                    <a href="#" class="btn btn-dark">See Brand</a>
                                 </div>
                             </div>
                         </div>

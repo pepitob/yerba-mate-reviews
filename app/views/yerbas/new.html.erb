@@ -23,7 +23,7 @@
               </div>
             </div>
             <%= f.input :name, required: true, input_html: { class: "col-12 mb-3 form-control", placeholder: "Enter the yerba's name" } %>
-            <%= f.input :brand, required: true, input_html: { class: "col-12 mb-3 form-control", placeholder: "Enter the brand" } %>
+            <%= f.input :brand_id, required: true, collection: Brand.all, input_html: { class: "col-12 mb-3 select2" } %>
             <%= f.input :category, collection: ["Con palo", "Sin palo", "Organic"], input_html: { class: "col-12 mb-3 select2" } %>
             <%= f.input :country, collection: ["🇦🇷 Argentina", "🇧🇷 Brazil", "🇵🇾 Paraguay", "🇺🇾 Uruguay", "🌎 Other"], input_html: { class: "col-12 mb-3 select2" } %>
           </div>
