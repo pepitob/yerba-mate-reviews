@@ -15,21 +15,10 @@
                         col-12 mb-4">
                         <div class="text-center position-relative
                             mt-n10">
-                            <img src="../assets/images/avatar-3.jpg"
+                            <img src="<%= @brand.logo_url %>"
                                 class="avatar-lg rounded-circle
                                 border-4 border border-white mb-3"
                                 alt="">
-                            <a href="#!" class="position-absolute
-                                top-0 right-0 ms-n4 mt-3"
-                                data-bs-toggle="tooltip"
-                                data-bs-placement="top" title=""
-                                data-bs-original-title="Verified">
-                                <img
-                                    src="<%= @brand.logo_url %>"
-                                    alt="" height="30" width="30" style="width: 100%; object-fit: cover;">
-                            </a>
-
-
                             <h2 class="mb-1"><%= @brand.name %></h2>
                             <p class="mb-2 d-block fs-6"><%= @brand.country.capitalize %></p>
                             <p class="mb-3 px-4 "><%= @brand.description %></p>
