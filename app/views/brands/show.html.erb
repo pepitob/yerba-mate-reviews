@@ -21,7 +21,9 @@
                                 alt="" style="width: 100%; object-fit: contain;">
                             <h2 class="mb-1"><%= @brand.name %></h2>
                             <p class="mb-2 d-block fs-6"><%= @brand.country.capitalize %></p>
-                            <p class="mb-3 px-4 "><%= @brand.description %></p>
+                            <div class="description-container" data-controller="show-description" data-action="click->show-description#show">
+                              <p class="description mb-3 px-4" data-show-description-target="text"><%= @brand.description %></p>
+                            </div>
                             <ul class="list-inline mb-0">
                                 <li class="list-inline-item"><span
                                         class="text-dark me-1"><%= Yerba.where(brand: @brand).count %></span>
