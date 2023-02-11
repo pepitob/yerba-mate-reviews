@@ -6,10 +6,10 @@
 .description-container {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .description {
-  cursor: pointer;
   overflow: hidden;
   text-overflow: ellipsis;
   -webkit-box-orient: vertical;
@@ -19,4 +19,22 @@
 
 .description.expanded {
   -webkit-line-clamp: unset;
+}
+
+.show-more-button {
+  font-size: 0.8rem;
+  &::after {
+    display: block;
+    content: "\F0140";
+    border-top: transparent;
+    font-family: $font-material-design;
+    border-top: transparent;
+    vertical-align: middle;
+    float: right;
+    font-size: 14px;
+    color: $gray-500;
+    border: 0 solid transparent;
+    font-weight: 900;
+    line-height: 1;
+}
 }
