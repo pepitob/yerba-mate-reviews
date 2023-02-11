@@ -2,6 +2,7 @@
 // user.scss
 // Use this to write your custom SCSS
 //
+
 .description-container {
   display: flex;
   align-items: center;
@@ -14,6 +15,11 @@
   max-height: 125px;
   transition: max-height 0.5s ease;
   flex: 1;
+  -webkit-box-orient: vertical;
+  display: block;
+  display: -webkit-box;
+  overflow: hidden !important;
+  -webkit-line-clamp: 5;
 }
 
 .description.expanded {
