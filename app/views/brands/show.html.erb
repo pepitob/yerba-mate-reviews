@@ -5,7 +5,7 @@
             <div class="col-xl-12 col-lg-12 col-md-12 col-12">
                 <!-- Bg -->
                 <div class="py-10 rounded-top"style="background:
-                    url(../assets/images/cover-img.jpg)
+                    url(<%= image_path("banner_brands2.webp") %>)
                     no-repeat;
                     background-size: cover;">
                 </div>
@@ -18,7 +18,7 @@
                             <img src="<%= @brand.logo_url %>"
                                 class="avatar-lg rounded-circle
                                 border-4 border border-white mb-3"
-                                alt="" style="width: 100%; object-fit: contain;">
+                                alt="" style="width: 100%; object-fit: contain; background-color: white">
                             <h2 class="mb-1"><%= @brand.name %></h2>
                             <p class="mb-2 d-block fs-6"><%= @brand.country.capitalize %></p>
                             <div class="description-container mb-4" data-controller="show-description" data-action="click->show-description#show" style="display: flex; flex-direction: column;">
