@@ -12,20 +12,11 @@
   cursor: pointer;
   overflow: hidden;
   text-overflow: ellipsis;
-  // max-height: 125px;
-  transition: max-height 0.5s ease;
-  flex: 1;
   -webkit-box-orient: vertical;
-  display: block;
   display: -webkit-box;
   -webkit-line-clamp: 5;
 }
 
 .description.expanded {
-  max-height: 100%;
-  height: auto;
-  overflow: visible;
-  text-overflow: clip;
   -webkit-line-clamp: unset;
-  display: block;
 }

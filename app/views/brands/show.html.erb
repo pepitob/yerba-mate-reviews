@@ -21,8 +21,9 @@
                                 alt="" style="width: 100%; object-fit: contain;">
                             <h2 class="mb-1"><%= @brand.name %></h2>
                             <p class="mb-2 d-block fs-6"><%= @brand.country.capitalize %></p>
-                            <div class="description-container" data-controller="show-description" data-action="click->show-description#show">
+                            <div class="description-container mb-4" data-controller="show-description" data-action="click->show-description#show" style="display: flex; flex-direction: column;">
                               <p class="description mb-3 px-4" data-show-description-target="text"><%= @brand.description %></p>
+                              <p class="show-more-button" data-show-description-target="button">Show more</p>
                             </div>
                             <ul class="list-inline mb-0">
                                 <li class="list-inline-item"><span
