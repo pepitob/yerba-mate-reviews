@@ -307,10 +307,11 @@
                                 <div class="text-center mt-4">
                                     <img src="<%= @yerba.brand.logo_url %>" alt="<%= @yerba.brand.name %> logo" class="rounded-circle avatar avatar-lg mb-2" style="width: 100%; object-fit: contain;">
                                     <h5 class="mb-0"><%= @yerba.brand.name %></h5>
-                                    <small><%= @yerba.brand.country %></small>
-                                    <p class="mb-0 mx-5 mt-3" style="overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 5; -webkit-box-orient: vertical; max-height: 8em;">
-                                      <%= @yerba.brand.description %>
-                                    </p>
+                                    <small><%= @yerba.brand.country.capitalize %></small>
+                                    <div class="description-container mb-0 mt-3" data-controller="show-description" data-action="click->show-description#show" style="display: flex; flex-direction: column;">
+                                      <p class="description mb-3 px-4" data-show-description-target="text"><%= @yerba.brand.description %></p>
+                                      <p class="show-more-button" data-show-description-target="button" style="display: flex; flex-direction: column;">Show more</p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="border-top card-body p-4 text-center">
