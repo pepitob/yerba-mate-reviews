@@ -318,7 +318,7 @@
                                 <p class="mb-0">Average rating: <span class="text-primary">98%</span></p>
                                 <p>Number of yerbas: <span class="text-primary"><%= Yerba.where(brand: @yerba.brand).count %></span></p>
                                 <div class="d-grid mx-8">
-                                    <a href="#" class="btn btn-dark">See Brand</a>
+                                  <%= link_to "See Brand", brand_path(@yerba.brand), class:"btn btn-dark text-decoration-none" %>
                                 </div>
                             </div>
                         </div>

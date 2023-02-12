@@ -58,29 +58,31 @@
             </div>
             <% @brand.yerbas.each do |yerba| %>
               <div class="col-xl-4 col-md-6 col-12">
-                <!-- listing block -->
-                <div class="mb-6">
-                    <div class="position-relative">
-                      <img src="<%= cl_image_path yerba.photo.key, crop: :fill %>" alt="<%= @brand.name %> - <%= yerba.name %>" style="height: 200px; width: 100%; border: 1px solid lightgrey" class="w-100 rounded-3">
-                      <div class="btn-wishlist"></div>
-                    </div>
-                    <div class="mt-3">
-                        <h4 class="mb-0 text-truncate"> <a href="/yerbas/<%= yerba.brand.id %>" class="text-inherit"><%= yerba.name %></a></h4>
-                        <p class="text-sm font-weight-semi-bold"><%= yerba.brand.name %></p>
-                        <div class="d-flex justify-content-between mt-3">
-                            <div>
-                                <span class="h5">$100</span><span class="text-sm font-weight-semi-bold ms-1">/night</span>
-                            </div>
-                            <div>
-                                <span class="mdi mdi-star me-1 text-primary text-sm"></span>
-                                <span class="font-weight-semi-bold  text-sm"><span class="text-dark">5.0</span> (8)</span>
-                            </div>
-                        </div>
-                    </div>
+                  <!-- listing block -->
+                <%= link_to yerba_path(yerba), class:"text-decoration-none" do %>
+                  <div class="mb-6">
+                      <div class="position-relative">
+                        <img src="<%= cl_image_path yerba.photo.key, crop: :fill %>" alt="<%= @brand.name %> - <%= yerba.name %>" style="height: 200px; width: 100%; border: 1px solid lightgrey; object-fit: cover;" class="w-100 rounded-3">
+                        <div class="btn-wishlist"></div>
+                      </div>
+                      <div class="mt-3">
+                          <h4 class="mb-0 text-truncate"><%= yerba.name %></h4>
+                          <p class="text-sm font-weight-semi-bold"><%= yerba.brand.name %></p>
+                          <div class="d-flex justify-content-between mt-3">
+                              <div>
+                                  <span class="h5">$100</span><span class="text-sm font-weight-semi-bold ms-1">/500 gr.</span>
+                              </div>
+                              <div>
+                                  <span class="mdi mdi-star me-1 text-primary text-sm"></span>
+                                  <span class="font-weight-semi-bold  text-sm"><span class="text-dark">5.0</span> (8)</span>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                <% end %>
+                  <!-- listing block -->
                 </div>
-                <!-- listing block -->
-              </div>
-            <% end %>
+              <% end %>
             </div>
         </div>
     </div>
