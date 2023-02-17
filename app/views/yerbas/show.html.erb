@@ -26,7 +26,7 @@
                             <h1 class="mb-2"><%= @yerba.name %></h1>
                             <h2 class="mb-4 fs-4"><%= @yerba.brand.name %></h2>
                             <div class="text-sm">
-                              <span class="me-2"><span class="ms-2"><%= @yerba.country %></span></span>
+                              <span class="me-2"><span class="ms-2"><span class="flag-icon flag-icon-<%= @yerba.brand.country_code %>"></span> <%= @yerba.brand.country.capitalize %></span></span>
                                 <span class="me-2"><i class="mdi mdi-account text-primary"></i><span class="ms-2">4
                   Guest</span></span>
                                 <span class="me-2"><i class="mdi mdi-home text-primary"></i><span class="ms-2">3
@@ -307,7 +307,7 @@
                                 <div class="text-center mt-4">
                                     <img src="<%= @yerba.brand.logo_url %>" alt="<%= @yerba.brand.name %> logo" class="rounded-circle avatar avatar-lg mb-2" style="width: 100%; object-fit: contain;">
                                     <h5 class="mb-0"><%= @yerba.brand.name %></h5>
-                                    <small><%= @yerba.brand.country.capitalize %></small>
+                                    <small><span class="flag-icon flag-icon-<%= @yerba.brand.country_code %>"></span> <%= @yerba.brand.country.capitalize %></small>
                                     <div class="description-container mb-0 mt-3" data-controller="show-description" data-action="click->show-description#show" style="display: flex; flex-direction: column;">
                                       <p class="description mb-3 px-4" data-show-description-target="text"><%= @yerba.brand.description %></p>
                                       <p class="show-more-button" data-show-description-target="button" style="display: flex; flex-direction: column;">Show more</p>

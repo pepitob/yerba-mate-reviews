@@ -20,7 +20,7 @@
                                 border-4 border border-white mb-3"
                                 alt="" style="width: 100%; object-fit: contain; background-color: white">
                             <h2 class="mb-1"><%= @brand.name %></h2>
-                            <p class="mb-2 d-block fs-6"><%= @brand.country.capitalize %></p>
+                            <p class="mb-2 d-block fs-6"><span class="flag-icon flag-icon-<%= @brand.country_code %>"></span> <%= @brand.country.capitalize %></p>
                             <div class="description-container mb-4" data-controller="show-description" data-action="click->show-description#show" style="display: flex; flex-direction: column;">
                               <p class="description mb-3 px-4" data-show-description-target="text"><%= @brand.description %></p>
                               <p class="show-more-button" data-show-description-target="button" style="display: flex; flex-direction: column;">Show more</p>
