@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   get '/blog' => redirect("https://bestyerbamate.co/blog/", status: 301)
   resources :brands
   resources :yerbas
+  resources :favourites, only: [:create, :destroy]
 end
