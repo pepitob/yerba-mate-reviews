@@ -8,7 +8,11 @@
                     <!-- listing badges -->
                     <div class="position-absolute bottom-0 mb-5 ms-5">
                         <div>
-                            <a href="#" class="btn btn-white btn-sm"> <span class="mdi mdi-heart me-1 text-danger"></span>Save</a>
+                            <%= form_with(url: favourites_path(@yerba, current_user), method: :post) do |f| %>
+                                <%= f.button class: 'btn btn-white btn-sm', name: 'commit' do %>
+                                  <span class="mdi mdi-heart me-1 text-danger"></span> Add to favourites
+                                <% end %>
+                            <% end %>
                             <a href="#gallery" class="btn btn-white btn-sm">View Photos</a></div>
                     </div>
                     <!-- listing badges -->
