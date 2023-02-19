@@ -10,7 +10,7 @@
                       <div>
                         <%= form_with(url: favourites_path(yerba_id: @yerba.id), method: :post, class: 'd-inline-block') do |f| %>
                           <%= f.button class: 'btn btn-white btn-sm', name: 'commit' do %>
-                            <span class="mdi mdi-heart me-1 text-danger"></span> Favourites
+                            <span class="mdi mdi-heart me-1 text-danger"></span> Add to favourites
                           <% end %>
                         <% end %>
                         <a href="#gallery" class="btn btn-white btn-sm">View Photos</a>
