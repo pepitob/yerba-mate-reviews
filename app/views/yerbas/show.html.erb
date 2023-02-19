@@ -8,7 +8,7 @@
                     <!-- listing badges -->
                     <div class="position-absolute bottom-0 mb-5 ms-5">
                       <div>
-                        <%= form_with(url: favourites_path(@yerba, current_user), method: :post, class: 'btn') do |f| %>
+                        <%= form_with(url: favourites_path(@yerba, current_user), method: :post, class: 'd-inline-block') do |f| %>
                           <%= f.button class: 'btn btn-white btn-sm', name: 'commit' do %>
                             <span class="mdi mdi-heart me-1 text-danger"></span> Favourites
                           <% end %>
