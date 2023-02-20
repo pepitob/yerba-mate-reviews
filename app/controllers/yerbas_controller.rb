@@ -10,6 +10,7 @@ class YerbasController < ApplicationController
   end
 
   def show
+    @user = current_user
     @yerba = Yerba.find(params[:id])
   end
 
