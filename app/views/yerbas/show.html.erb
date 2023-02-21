@@ -8,9 +8,17 @@
                     <!-- listing badges -->
                     <div class="position-absolute bottom-0 mb-5 ms-5">
                       <div>
-                        <%= form_with(url: favourites_path(yerba_id: @yerba.id), method: :post, class: 'd-inline-block') do |f| %>
-                          <%= f.button class: 'btn btn-white btn-sm', name: 'commit' do %>
-                            <span class="mdi mdi-heart me-1 text-danger"></span> Add to favourites
+                        <% if @yerba.favourited?(@user) %>
+                          <%= form_with(url: favourite_path(yerba_id: @yerba.id, user_id: current_user.id), method: :delete, class: 'd-inline-block') do |f| %>
+                            <%= f.button class: 'btn btn-white btn-sm', name: 'commit' do %>
+                              <span class="mdi mdi-heart me-1 text-danger"></span> Remove from favourites
+                            <% end %>
+                          <% end %>
+                        <% else %>
+                          <%= form_with(url: favourites_path(yerba_id: @yerba.id), method: :post, class: 'd-inline-block') do |f| %>
+                            <%= f.button class: 'btn btn-white btn-sm', name: 'commit' do %>
+                              <span class="mdi mdi-heart me-1 text-danger"></span> Add to favourites
+                            <% end %>
                           <% end %>
                         <% end %>
                         <a href="#gallery" class="btn btn-white btn-sm">View Photos</a>

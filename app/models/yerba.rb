@@ -5,6 +5,6 @@ class Yerba < ApplicationRecord
   validates :name, presence: true
 
   def favourited?(user)
-    Favourite.where(yerba: self, user: user)
+    Favourite.find_by(yerba: self, user: user)
   end
 end
