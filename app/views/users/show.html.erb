@@ -31,14 +31,10 @@
                             </a>
 
 
-                            <h2 class="mb-1">David Young</h2>
+                            <h2 class="mb-1"><%= @user.username %></h2>
                             <p class="mb-2 d-block fs-6">Joined in
                                 <%= @user.created_at.strftime('%B %Y') %></p>
-                            <p class="mb-3 px-4 ">Hello! I m glad to share
-                                with you all the listings that i ve
-                                created. Mauris
-                                feugiat, ex sed condigiat arcu dui
-                                ac nunc vitae ultricies eros...</p>
+                            <p class="mb-3 px-4 "><%= @user.bio %></p>
                             <ul class="list-inline mb-0">
                                 <li class="list-inline-item"><span
                                         class="text-dark me-1">8</span>
@@ -74,7 +70,7 @@
         </div>
         <div class="row">
             <div class="col-12 mb-6">
-                <h2 class="mb-0"><%= @user %>'s favourite yerbas
+                <h2 class="mb-0"><%= @user.username %>'s favourite yerbas
                 </h2>
             </div>
             <% @user.favourites.each do |favourite| %>
