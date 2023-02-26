@@ -1,0 +1,19 @@
+# Sample brands data for testing
+
+brand_1:
+  name: "Grupo Molinos"
+  description: "One of the largest food companies in Argentina, producing high-quality yerba mate under the Taragüi and Rosamonte brands"
+  country: "Argentina"
+  logo_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Logo_Molinos_Wiki2.png/800px-Logo_Molinos_Wiki2.png"
+
+brand_2:
+  name: "Las Marías"
+  description: "A leading Argentine company with a strong tradition of yerba mate production, known for their Canarias brand"
+  country: "Argentina"
+  logo_url: "https://www.latinando.de/media/image/cc/9c/ca/Las-marias.png"
+
+brand_3:
+  name: "Canarias"
+  description: "An uruguayan company specializing in yerba mate, sourced from Brazil"
+  country: "Uruguay"
+  logo_url: "https://i2.wp.com/canariasyerbamate.com/wp-content/uploads/2017/04/cropped-logo-1.jpg?fit=512%2C512&ssl=1"

@@ -1,0 +1,33 @@
+# Sample yerbas data for testing
+
+yerba_1:
+  name: "Rosamonte"
+  country: "Argentina"
+  overall_rating: 4.5
+  category: "Traditional"
+  description: "A classic Argentine yerba mate with a rich flavor and aroma"
+  brand_id: 70
+
+yerba_2:
+  name: "Canarias"
+  country: "Uruguay"
+  overall_rating: 4.0
+  category: "Traditional"
+  description: "A popular Uruguayan yerba mate with a bold, robust flavor"
+  brand_id: 69
+
+yerba_3:
+  name: "La Merced"
+  country: "Argentina"
+  overall_rating: 4.2
+  category: "Organic"
+  description: "A high-quality organic yerba mate from Argentina with a smooth, delicate flavor"
+  brand_id: 68
+
+yerba_4:
+  name: "Taragüi"
+  country: "Argentina"
+  overall_rating: 2.3
+  category: "Flavored"
+  description: "A delicious yerba mate with a touch of orange flavor"
+  brand_id: 71
