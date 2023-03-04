@@ -82,3 +82,5 @@ gem 'google-tag-manager-rails'
 gem "rails_material_design_icons"
 gem "cloudinary"
 gem 'flag-icons-rails'
+gem "elasticsearch", "< 7.14" # to use a supported version of the Elasticsearch Ruby client
+gem "searchkick", "~> 4.0"
