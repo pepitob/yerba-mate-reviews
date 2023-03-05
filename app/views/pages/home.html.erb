@@ -58,128 +58,22 @@
         <div class="theme-carousel p-3">
           <div class="owl-carousel owl-theme owl-location-listing">
             <!-- item -->
-            <div class="item">
-              <div class="mb-3">
-                <div class=" img-hover">
-                  <a href="listing-category.html"><img src="../assets/images/space-img-1.jpg"  alt="Rentkit Directory & Listing Bootstrap 5 Theme"
-                      class="img-fluid rounded mb-4"></a></div>
-                <h4 class="mb-0"> <a href="listing-category.html" class="text-dark">Condo/Apartment</a></h4>
-                <p class="small">View 87 Condo/Aprtments </p>
+            <% Yerba.last(10).each do |yerba| %>
+              <div class="item">
+                <div class="mb-3">
+                  <div class=" img-hover">
+                    <a href="listing-category.html"><img src="<%= cl_image_path yerba.photo.key, height: 300, crop: :fill %>"  alt=<%= yerba.name %>
+                        class="img-fluid rounded mb-4"></a></div>
+                  <h4 class="mb-0"> <a href="listing-category.html" class="text-dark"><%= yerba.name %></a></h4>
+                  <p class="small"><%= yerba.brand %></p>
+                </div>
               </div>
-            </div>
-            <!-- item -->
-            <div class="item">
-              <div class="mb-3">
-                <div class=" img-hover">
-                  <a href="listing-category.html"><img src="../assets/images/space-img-2.jpg"  alt="Rentkit Directory & Listing Bootstrap 5 Theme"
-                      class="img-fluid rounded mb-4"></a></div>
-                <h4 class="mb-0"> <a href="listing-category.html" class="text-dark">Lodges </a></h4>
-                <p class="small">View 12,399 Lodges </p>
-              </div>
-            </div>
-            <!-- item -->
-            <div class="item">
-              <div class="mb-3">
-                <div class=" img-hover">
-                  <a href="listing-category.html"><img src="../assets/images/space-img-3.jpg"  alt="Rentkit Directory & Listing Bootstrap 5 Theme"
-                      class="img-fluid rounded mb-4"></a></div>
-                <h4 class="mb-0"> <a href="listing-category.html" class="text-dark">Guest houses</a></h4>
-                <p class="small">View 87,230 Guest Houses </p>
-              </div>
-            </div>
-            <!-- item -->
-            <div class="item">
-              <div class="mb-3">
-                <div class=" img-hover">
-                  <a href="listing-category.html"><img src="../assets/images/space-img-4.jpg"  alt="Rentkit Directory & Listing Bootstrap 5 Theme"
-                      class="img-fluid rounded mb-4"></a></div>
-                <h4 class="mb-0"> <a href="listing-category.html" class="text-dark">Hotels</a></h4>
-                <p class="small">View 12,000 Hotels </p>
-              </div>
-            </div>
-            <!-- item -->
-            <div class="item">
-              <div class="mb-3">
-                <div class=" img-hover">
-                  <a href="listing-category.html"><img src="../assets/images/space-img-5.jpg"  alt="Rentkit Directory & Listing Bootstrap 5 Theme"
-                      class="img-fluid rounded mb-4"></a></div>
-                <h4 class="mb-0"> <a href="listing-category.html" class="text-dark">Resorts</a></h4>
-                <p class="small">View 8,000 Resorts </p>
-              </div>
-            </div>
-            <!-- item -->
-            <div class="item">
-              <div class="mb-3">
-                <div class=" img-hover">
-                  <a href="listing-category.html"><img src="../assets/images/space-img-6.jpg"  alt="Rentkit Directory & Listing Bootstrap 5 Theme"
-                      class="img-fluid rounded mb-4"></a></div>
-                <h4 class="mb-0"> <a href="listing-category.html" class="text-dark">Villas</a></h4>
-                <p class="small">View 34,000 Villas </p>
-              </div>
-            </div>
-            <!-- item -->
-            <div class="item">
-              <div class="mb-3">
-                <div class=" img-hover">
-                  <a href="listing-category.html"><img src="../assets/images/space-img-2.jpg"  alt="Rentkit Directory & Listing Bootstrap 5 Theme"
-                      class="img-fluid rounded mb-4"></a></div>
-                <h4 class="mb-0"> <a href="listing-category.html" class="text-dark">Condo/Apartment</a></h4>
-                <p class="small">View 87 Condo/Aprtments </p>
-              </div>
-            </div>
-            <!-- item -->
-            <div class="item">
-              <div class="mb-3">
-                <div class=" img-hover">
-                  <a href="listing-category.html"><img src="../assets/images/space-img-3.jpg"  alt="Rentkit Directory & Listing Bootstrap 5 Theme"
-                      class="img-fluid rounded mb-4"></a></div>
-                <h4 class="mb-0"> <a href="listing-category.html" class="text-dark">Lodges </a></h4>
-                <p class="small">View 12,399 Lodges </p>
-              </div>
-            </div>
-            <!-- item -->
-            <div class="item">
-              <div class="mb-3">
-                <div class=" img-hover">
-                  <a href="listing-category.html"><img src="../assets/images/space-img-4.jpg"  alt="Rentkit Directory & Listing Bootstrap 5 Theme"
-                      class="img-fluid rounded mb-4"></a></div>
-                <h4 class="mb-0"> <a href="listing-category.html" class="text-dark">Guest houses</a></h4>
-                <p class="small">View 87,230 Guest Houses </p>
-              </div>
-            </div>
-            <!-- item -->
-            <div class="item">
-              <div class="mb-3">
-                <div class=" img-hover">
-                  <a href="listing-category.html"><img src="../assets/images/space-img-5.jpg"  alt="Rentkit Directory & Listing Bootstrap 5 Theme"
-                      class="img-fluid rounded mb-4"></a></div>
-                <h4 class="mb-0"> <a href="listing-category.html" class="text-dark">Hotels</a></h4>
-                <p class="small">View 12,000 Hotels </p>
-              </div>
-            </div>
-            <!-- item -->
-            <div class="item">
-              <div class="mb-3">
-                <div class=" img-hover">
-                  <a href="listing-category.html"><img src="../assets/images/space-img-6.jpg"  alt="Rentkit Directory & Listing Bootstrap 5 Theme"
-                      class="img-fluid rounded mb-4"></a></div>
-                <h4 class="mb-0"> <a href="listing-category.html" class="text-dark">Resorts</a></h4>
-                <p class="small">View 8,000 Resorts </p>
-              </div>
-            </div>
-            <!-- item -->
-            <div class="item">
-              <div class="mb-3">
-                <div class=" img-hover">
-                  <a href="listing-category.html"><img src="../assets/images/space-img-4.jpg"  alt="Rentkit Directory & Listing Bootstrap 5 Theme"
-                      class="img-fluid rounded mb-4"></a></div>
-                <h4 class="mb-0"> <a href="listing-category.html" class="text-dark">Villas</a></h4>
-                <p class="small">View 34,000 Villas </p>
-              </div>
-            </div>
+            <% end %>
           </div>
         </div>
       </div>
     </div>
+    <!-- End of image gallery -->
+
   </div>
 </div>
