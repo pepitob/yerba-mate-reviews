@@ -9,4 +9,3 @@ import './listing-map';
 import './main';
 import './navbar';
 import './validation';
-import './owl-carousel'
