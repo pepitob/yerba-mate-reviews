@@ -9,3 +9,4 @@ import './listing-map';
 import './main';
 import './navbar';
 import './validation';
+import '/home/hippo/code/pepitob/yerba-mate-reviews/app/javascript/theme/main'
