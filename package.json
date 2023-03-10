@@ -90,7 +90,7 @@
     "isexe": "^2.0.0",
     "isobject": "^3.0.1",
     "jest-worker": "^27.5.1",
-    "jquery": "^3.6.0",
+    "jquery": "^3.6.4",
     "jquery-raty-js": "^2.8.0",
     "js-base64": "^2.6.4",
     "json-parse-even-better-errors": "^2.3.1",

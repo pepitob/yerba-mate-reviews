@@ -3,3 +3,5 @@ import "@hotwired/turbo-rails"
 import "./controllers"
 import "bootstrap"
 import "./theme/index"
+import "./../../node_modules/jquery"
+import $ from 'jquery';
