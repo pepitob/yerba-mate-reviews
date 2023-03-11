@@ -59,7 +59,7 @@
           <div class="owl-carousel owl-theme owl-location-listing">
             <!-- item -->
             <% Yerba.last(10).each do |yerba| %>
-              <div class="item">
+              <div class="item owl-item">
                 <div class="mb-3">
                   <div class=" img-hover">
                     <a href="listing-category.html"><img src="<%= cl_image_path yerba.photo.key, height: 300, crop: :fill %>"  alt="<%= yerba.name %> picture"
